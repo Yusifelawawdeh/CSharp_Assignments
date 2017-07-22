@@ -1,0 +1,57 @@
+000.000.00,AssetName,Distributor,Condition,Branch,YearsOfService,InitialPrice,FinalPrice,Bought,Available,Sold,PriceAfterSold,PriceBeforeSold
+903.478.41,STENLILLE,Ikea Online,New,Ikea,10,120.00,120.00,N/Y,0,N/A,0.00,20.00
+802.643.94,SVARTSJÖN,Ikea Online,New,Ikea,2,3.00,3.00,N/Y,0,N/A,0.00,0.00
+803.297.91,PINNIG,Ikea Online,New, Ikea ,5,50.00,50.00,N/Y,0, N/A ,0.00,10.00
+703.096.04,BRYNET,Ikea Online  ,New,Ikea,2,180.00,30.00,N/Y,0,N/A,0.00,10.00
+692.238.28,GERTON / ALEX,Ikea Online,New,Ikea,10,444.00,222.00,N/Y,0,N/A,0.00,140.00
+N/A,Sayl Stool,Herman Miller Online,New,HermanMiller,20,0,0,N/Y,0,N/A,0.00,410.00
+N/A,Goetz Sofa,Herman Miller Online,New,HermanMiller,20,0,0,N/Y,0,N/A,0.00,"5,000.00"
+N/A,Eames Lounge Chair and Ottoman,HermanMiller Online,New,HermanMiller,20,,,N/Y,0,N/A,0.00,"4,000.00"
+N/A,Nelson Platform Bench,Herman Miller Online,New,HermanMiller,20,0,0,N/Y,0,N/A,0.00,"1,000.00"
+602.758.12,KALLAX,Ikea Online,New,Ikea,10,35.00,35.00,N/Y,0,N/A,0.00,10.00
+B0007PNMNA,Larin PTT-1 Portable Tool Tray,Amazon Online,New,Amazon,20,70.00,70.00,N/Y,0,N/A,0.00,20.00
+B0009EUA0M,Pro-Lift C-3001 Pneumatic Chair,Amazon Online,New,Amazon,20,40.00,40.00,N/Y,0,N/A,0.00,10.00
+301.675.07,MARTORP,Ikea Online,New,Ikea,5,40.00,40.00,N/Y,0,N/A,0.00,0.00
+702.783.58,IKEA 365+,Ikea Online,New,Ikea,5,5.00,5.00,N/Y,0,N/A,0.00,0.00
+802.564.45,DINERA Plate,Ikea Online,New,Ikea,5,10.00,10.00,N/Y,0,N/A,0.00,0.00
+002.564.49,DINERA Bowl,Ikea Online,New,Ikea,5,10.00,10.00,N/Y,0,N/A,0.00,0.00
+802.131.73,FINTORP,Ikea Online,New,Ikea,10,15.00,15.00,N/Y,0,N/A,0.00,0.00
+903.339.76,RÅSKOG,Ikea Online,New,Ikea,10,50.00,25.00,N/Y,0,N/A,0.00,0.00
+203.140.71,GIGANTISK,Ikea Online,New,Ikea,10,25.00,25.00,N/Y,0,N/A,0.00,0.00
+601.495.31,SKÄNKA,Ikea Online,New,Ikea,10,35.00,35.00,N/Y,0,N/A,0.00,0.00
+503.190.34,SPECIELL,Ikea Online,New,Ikea,10,5.00,5.00,N/Y,0,N/A,0.00,0.00
+001.525.45,DINERA Mug,Ikea Online,New,Ikea,3,8.00,2.00,N/Y,0,N/A,0.00,0.00
+702.926.32,VARDAGEN Oven Mitt,Ikea Online,New,Ikea,3,8.00,4.00,N/Y,0,N/A,0.00,0.00
+802.926.36,VARDAGEN Dish Towl,Ikea Online,New,Ikea,5,16.00,4.00,N/Y,0,N/A,0.00,0.00
+202.878.31,VARDAGEN Table Cloth,Ikea Online,New,Ikea,5,5.00,5.00,N/Y,0,N/A,0.00,0.00
+702.972.72,VARDAGEN Oven Dish,Ikea Online,New,Ikea,5,13.00,13.00,N/Y,0,N/A,0.00,0.00
+703.303.99,VARDAGEN Measuring Cup,Ikea Online,New,Ikea,5,5.00,5.00,N/Y,0,N/A,0.00,0.00
+303.243.57,VARDAGEN Bottle/Can Openers,Ikea Online,New,Ikea,5,6.00,6.00,N/Y,0,N/A,0.00,0.00
+003.307.03,VARDAGEN Measuring Spoons,Ikea Online,New,Ikea,5,5.00,5.00,N/Y,0,N/A,0.00,0.00
+202.587.15,FUNGERA Tray,Ikea Online,New,Ikea,5,4.00,4.00,N/Y,0,N/A,0.00,0.00
+669.162.00,IDEALISK Grater,Ikea Online,New,Ikea,5,4.00,4.00,N/Y,0,N/A,0.00,0.00
+101.349.71,UPPENBAR,Ikea Online,New,Ikea,5,6.00,6.00,N/Y,0,N/A,0.00,0.00
+N/A,Rubbermaid Easy Find Lids Food Storage Container,Amazon Online,New,Amazon,10,45.00,45.00,N/Y,0,N/A,0.00,0.00
+N/A,Estilo Natural Bamboo Cutting Board Set,Amazon Online,New,Amazon,10,10.00,10.00,N/Y,0,N/A,0.00,0.00
+N/A,Amazon Basics Silicone Spatulas,Amazon Online,New,Amazon,10,7.00,7.00,N/Y,0,N/A,0.00,0.00
+N/A,Pyrex Prepware Glass Mixing Bowl Set,Amazon Online,New,Amazon,10,15.00,15.00,N/Y,0,N/A,0.00,0.00
+BL660,Ninja Professional Blender,Amazon Online,New,Amazon,10,100.00,100.00,N/Y,0,N/A,0.00,0.00
+N/A,Breville BES870XL Barista Express Espresso Machine,Amazon Online,New,Amazon,5,560.00,560.00,N/Y,0,N/A,0.00,0.00
+N/A, Utopia Kitchen Knife Set,Amazon Online,New,Amazon,5,100.00,100.00,N/Y,0,N/A,0.00,0.00
+N/A,ExcelSteel 242 5-Quart Stainless Steel Colander,Amazon Online,New,Amazon,5,10.00,10.00,N/Y,0,N/A,0.00,0.00
+003.122.85,BJÖRNÅN,Ikea Online,New,Ikea,5,17.00,17.00,N/Y,0,N/A,0.00,0.00
+231.029.00,RINGSJÖN,Ikea Online  ,New,Ikea,5,1.00,1.00,N/Y,0,N/A,0.00,0.00
+003.122.85,BOLMEN Toilet Brush,Ikea Online,New,Ikea,5,1.00,1.00,N/Y,0,N/A,0.00,0.00
+203.130.62,BARVALLA Bath Mat,Ikea Online,New,Ikea,5,15.00,15.00,N/Y,0,N/A,0.00,0.00
+402.954.39,FNISS Trash Can,Ikea Online,New,Ikea,5,2.00,2.00,N/Y,0,N/A,0.00,0.00
+N/A,Chakir Turkish Linens,Amazon Online,New,Amazon,5,70.00,70.00,N/Y,0,N/A,0.00,0.00
+190.098.21,FJELLSE Bed Frame,Ikea Online,New,Ikea,5,90.00,90.00,N/Y,0,N/A,0.00,0.00
+802.773.82,MORGEDAL Foam Mattress,Ikea Online,New,Ikea,5,280.00,280.00,N/Y,0,N/A,0.00,0.00
+202.382.23,VARDÖ UnderBed Storage,Ikea Online,New,Ikea,5,30.00,30.00,N/Y,0,N/A,0.00,0.00
+703.426.94,BACKNEJLIKA Sheet Set,Ikea Online,New,Ikea,5,10.00,10.00,N/Y,0,N/A,0.00,0.00
+703.178.02,KLOTULLÖRT Body Pillow,Ikea Online,New,Ikea,5,9.00,9.00,N/Y,0,N/A,0.00,0.00
+902.696.21,JORDRÖK Pillow,Ikea Online,New,Ikea,5,10.00,10.00,N/Y,0,N/A,0.00,0.00
+602.714.61,GLANSVIDE Conforter,Ikea Online,New,Ikea,5,80.00,80.00,N/Y,0,N/A,0.00,0.00
+401.903.81,HENRIKA Throw,Ikea Online,New,Ikea,5,17.00,17.00,N/Y,0,N/A,0.00,0.00
+703.279.81,SLÄKTING Laundry,Ikea Online,New,Ikea,5,20.00,10.00,N/Y,0,N/A,0.00,0.00
+003.279.13,SLÄKTING Orginizer,Ikea Online,New,Ikea,5,16.00,8.00,N/Y,0,N/A,0.00,0.00

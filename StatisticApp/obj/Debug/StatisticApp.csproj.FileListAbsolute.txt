@@ -1,0 +1,8 @@
+c:\users\atlas\onedrive\documents\visual studio 2017\Projects\StatisticApp\StatisticApp\bin\Debug\TextFile1.txt
+c:\users\atlas\onedrive\documents\visual studio 2017\Projects\StatisticApp\StatisticApp\bin\Debug\StatisticApp.exe.config
+c:\users\atlas\onedrive\documents\visual studio 2017\Projects\StatisticApp\StatisticApp\bin\Debug\StatisticApp.exe
+c:\users\atlas\onedrive\documents\visual studio 2017\Projects\StatisticApp\StatisticApp\bin\Debug\StatisticApp.pdb
+c:\users\atlas\onedrive\documents\visual studio 2017\Projects\StatisticApp\StatisticApp\obj\Debug\StatisticApp.csprojResolveAssemblyReference.cache
+c:\users\atlas\onedrive\documents\visual studio 2017\Projects\StatisticApp\StatisticApp\obj\Debug\StatisticApp.exe
+c:\users\atlas\onedrive\documents\visual studio 2017\Projects\StatisticApp\StatisticApp\obj\Debug\StatisticApp.pdb
+c:\users\atlas\onedrive\documents\visual studio 2017\Projects\StatisticApp\StatisticApp\bin\Debug\Pricing_data.csv
