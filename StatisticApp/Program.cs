@@ -24,8 +24,12 @@ namespace StatisticApp
             foreach (var player in players)
             {
                 Console.WriteLine("Name : " + player.FirstName + " Points Per Game : " + player.PointsPerGame);
-                Console.ReadLine();
             }
+            fileName = Path.Combine(directory.FullName, "topten.json");
+            SerializePlayersToFile(topTenPlayers, fileName);
+
+
+
         }
 
         public static string ReadFile(string fileName)
@@ -110,6 +114,17 @@ namespace StatisticApp
                     break;
             }
             return topTenPlayers;
+        }
+
+        public static void SerializePlayersToFile(List<Player> players, string fileName)
+        {
+            var serializer = new JsonSerializer();
+            using (var writer = new StreamWriter(fileName))
+            using (var jsonWriter = new JsonTextWriter(writer))
+            {
+                serializer.Serialize(jsonWriter, players);
+            }
+
         }
 
     }
