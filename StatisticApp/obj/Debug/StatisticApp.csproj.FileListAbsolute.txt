@@ -13,6 +13,5 @@ C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\StatisticApp\bin\Debug\StatisticApp.pdb
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\StatisticApp\bin\Debug\Newtonsoft.Json.dll
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\StatisticApp\bin\Debug\Newtonsoft.Json.xml
-C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\StatisticApp\obj\Debug\StatisticApp.csprojResolveAssemblyReference.cache
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\StatisticApp\obj\Debug\StatisticApp.exe
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\StatisticApp\obj\Debug\StatisticApp.pdb
