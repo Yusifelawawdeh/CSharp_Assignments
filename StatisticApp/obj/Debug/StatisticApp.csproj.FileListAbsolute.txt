@@ -16,3 +16,4 @@ C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\StatisticApp\obj\Debug\StatisticApp.exe
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\StatisticApp\obj\Debug\StatisticApp.pdb
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\StatisticApp\bin\Debug\players.json
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\StatisticApp\obj\Debug\StatisticApp.csprojResolveAssemblyReference.cache

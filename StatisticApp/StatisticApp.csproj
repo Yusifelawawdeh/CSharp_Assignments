@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExcerciseProgram.cs" />
+    <Compile Include="PlayerComparer.cs" />
     <Compile Include="PriceResults.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

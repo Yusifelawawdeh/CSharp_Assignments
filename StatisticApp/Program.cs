@@ -20,9 +20,10 @@ namespace StatisticApp
             var fileContents = ReadPricingData(fileName);
             fileName = Path.Combine(directory.FullName, "players.json");
             var players = DeserializePlayers(fileName);
+            var topTenPlayers = GetTopTenPlayers(players);
             foreach (var player in players)
             {
-                Console.WriteLine(player.second_name);
+                Console.WriteLine("Name : " + player.FirstName + " Points Per Game : " + player.PointsPerGame);
                 Console.ReadLine();
             }
         }
@@ -95,5 +96,21 @@ namespace StatisticApp
             }
             return players;
         }
+
+        public static List<Player> GetTopTenPlayers(List<Player> players)
+        {
+            var topTenPlayers = new List<Player>();
+            players.Sort(new PlayerComparer());
+            int counter = 0;
+            foreach (var player in players)
+            {
+                topTenPlayers.Add(player);
+                counter++;
+                if (counter == 10)
+                    break;
+            }
+            return topTenPlayers;
+        }
+
     }
 }
