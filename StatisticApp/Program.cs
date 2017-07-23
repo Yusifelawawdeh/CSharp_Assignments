@@ -5,6 +5,7 @@ using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using System.IO;
 
 namespace StatisticApp
@@ -17,7 +18,13 @@ namespace StatisticApp
             DirectoryInfo directory = new DirectoryInfo(currentDirectory);
             var fileName = Path.Combine(directory.FullName, "Pricing_data.csv");
             var fileContents = ReadPricingData(fileName);
+            fileName = Path.Combine(directory.FullName, "players.json");
+            var players = DeserializePlayers(fileName);
 
+            foreach (var player in players)
+            {
+                Console.WriteLine(player.second_name);
+            }
         }
 
         public static string ReadFile(string fileName)
@@ -75,6 +82,18 @@ namespace StatisticApp
                 }
             }
             return pricingData;
+        }
+
+        public static List<Player> DeserializePlayers(string fileName)
+        {
+            var players = new List<Player>();
+            var serializer = new JsonSerializer();
+            using (var reader = new StreamReader(fileName))
+            using(var jsonReader = new JsonTextReader(reader))
+            {
+               players = serializer.Deserialize<List<Player>>(jsonReader);
+            }
+            return players;
         }
     }
 }

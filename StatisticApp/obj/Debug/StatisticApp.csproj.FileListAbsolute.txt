@@ -6,3 +6,13 @@ c:\users\atlas\onedrive\documents\visual studio 2017\Projects\StatisticApp\Stati
 c:\users\atlas\onedrive\documents\visual studio 2017\Projects\StatisticApp\StatisticApp\obj\Debug\StatisticApp.exe
 c:\users\atlas\onedrive\documents\visual studio 2017\Projects\StatisticApp\StatisticApp\obj\Debug\StatisticApp.pdb
 c:\users\atlas\onedrive\documents\visual studio 2017\Projects\StatisticApp\StatisticApp\bin\Debug\Pricing_data.csv
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\StatisticApp\bin\Debug\TextFile1.txt
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\StatisticApp\bin\Debug\Pricing_data.csv
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\StatisticApp\bin\Debug\StatisticApp.exe.config
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\StatisticApp\bin\Debug\StatisticApp.exe
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\StatisticApp\bin\Debug\StatisticApp.pdb
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\StatisticApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\StatisticApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\StatisticApp\obj\Debug\StatisticApp.csprojResolveAssemblyReference.cache
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\StatisticApp\obj\Debug\StatisticApp.exe
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\StatisticApp\obj\Debug\StatisticApp.pdb
