@@ -18,7 +18,7 @@ namespace StatisticApp
             DirectoryInfo directory = new DirectoryInfo(currentDirectory);
             var fileName = Path.Combine(directory.FullName, "Pricing_data.csv");
             var fileContents = ReadPricingData(fileName);
-            fileName = Path.Combine(directory.FullName, "players.json");
+            fileName = Path.Combine(directory.FullName, "player.json");
             var players = DeserializePlayers(fileName);
 
             foreach (var player in players)
