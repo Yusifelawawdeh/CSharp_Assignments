@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StatisticApp
 {
-    public class Rootobject
+    public class Rootbject
     {
         public Player[] Players { get; set; }
     }
