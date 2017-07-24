@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExcerciseProgram.cs" />
+    <Compile Include="NewsSearch.cs" />
     <Compile Include="PlayerComparer.cs" />
     <Compile Include="PriceResults.cs" />
     <Compile Include="Program.cs" />
@@ -54,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="json1.json" />
     <None Include="packages.config" />
     <None Include="players.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

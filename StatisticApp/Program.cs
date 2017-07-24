@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.IO;
+using System.Net;
 
 namespace StatisticApp
 {
@@ -14,20 +15,20 @@ namespace StatisticApp
     {
         static void Main(string[] args)
         {
-            string currentDirectory = Directory.GetCurrentDirectory();
-            DirectoryInfo directory = new DirectoryInfo(currentDirectory);
-            var fileName = Path.Combine(directory.FullName, "Pricing_data.csv");
-            var fileContents = ReadPricingData(fileName);
-            fileName = Path.Combine(directory.FullName, "players.json");
-            var players = DeserializePlayers(fileName);
-            var topTenPlayers = GetTopTenPlayers(players);
-            foreach (var player in players)
-            {
-                Console.WriteLine("Name : " + player.FirstName + " Points Per Game : " + player.PointsPerGame);
-            }
-            fileName = Path.Combine(directory.FullName, "topten.json");
-            SerializePlayersToFile(topTenPlayers, fileName);
-
+            //string currentDirectory = Directory.GetCurrentDirectory();
+            //DirectoryInfo directory = new DirectoryInfo(currentDirectory);
+            //var fileName = Path.Combine(directory.FullName, "Pricing_data.csv");
+            //var fileContents = ReadPricingData(fileName);
+            //fileName = Path.Combine(directory.FullName, "players.json");
+            //var players = DeserializePlayers(fileName);
+            //var topTenPlayers = GetTopTenPlayers(players);
+            //foreach (var player in players)
+            //{
+            //    Console.WriteLine("Name : " + player.FirstName + " Points Per Game : " + player.PointsPerGame);
+            //}
+            //fileName = Path.Combine(directory.FullName, "topten.json");
+            //SerializePlayersToFile(topTenPlayers, fileName);
+            Console.WriteLine(GetNewsForPlayer("Diego Valeri"));
 
 
         }
@@ -127,5 +128,32 @@ namespace StatisticApp
 
         }
 
+        public static string GetGoogleHomePage()
+        {
+            var webClient = new WebClient();
+            byte[] googleHome = webClient.DownloadData("https://www.google.com");
+
+            using (var stream = new MemoryStream(googleHome))
+            using (var reader = new StreamReader(stream))
+            {
+                return reader.ReadToEnd();
+            }
+        }
+
+        public static string GetNewsForPlayer(string playerName)
+        {
+            var webClient = new WebClient();
+            webClient.Headers.Add("Ocp-Apim-Subscription-Key", "90b093df119545609387ef5131b462e9");
+            byte[] searchResults = webClient.DownloadData(string.Format("https://api.cognitive.microsoft.com/bing/v5.0/news/search?q={0}&mkt=en-us", playerName));
+
+            using (var stream = new MemoryStream(searchResults))
+            using (var reader = new StreamReader(stream))
+            {
+                return reader.ReadToEnd();
+            }
+        }
+
+
     }
 }
+
