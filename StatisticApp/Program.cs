@@ -15,20 +15,24 @@ namespace StatisticApp
     {
         static void Main(string[] args)
         {
-            //string currentDirectory = Directory.GetCurrentDirectory();
-            //DirectoryInfo directory = new DirectoryInfo(currentDirectory);
-            //var fileName = Path.Combine(directory.FullName, "Pricing_data.csv");
-            //var fileContents = ReadPricingData(fileName);
-            //fileName = Path.Combine(directory.FullName, "players.json");
-            //var players = DeserializePlayers(fileName);
-            //var topTenPlayers = GetTopTenPlayers(players);
-            //foreach (var player in players)
-            //{
-            //    Console.WriteLine("Name : " + player.FirstName + " Points Per Game : " + player.PointsPerGame);
-            //}
-            //fileName = Path.Combine(directory.FullName, "topten.json");
-            //SerializePlayersToFile(topTenPlayers, fileName);
-            Console.WriteLine(GetNewsForPlayer("Diego Valeri"));
+            string currentDirectory = Directory.GetCurrentDirectory();
+            DirectoryInfo directory = new DirectoryInfo(currentDirectory);
+            var fileName = Path.Combine(directory.FullName, "Pricing_data.csv");
+            var fileContents = ReadPricingData(fileName);
+            fileName = Path.Combine(directory.FullName, "players.json");
+            var players = DeserializePlayers(fileName);
+            var topTenPlayers = GetTopTenPlayers(players);
+            foreach (var player in players)
+            {
+                List<NewsSearch> newsSearch = GetNewsForPlayer(string.Format("{0} {1}", player.FirstName, player.SecondName));
+                foreach (var search in newsSearch)
+                {
+                    Console.WriteLine(string.Format("Date: {0}, Headline: {1}, Summary: {2}", search.NewsValue,
+                        search.ReadLink, search.TotalEstimatedMatches));
+                }
+            }
+            fileName = Path.Combine(directory.FullName, "topten.json");
+            SerializePlayersToFile(topTenPlayers, fileName);
 
 
         }
@@ -140,16 +144,18 @@ namespace StatisticApp
             }
         }
 
-        public static string GetNewsForPlayer(string playerName)
+        public static List<NewsSearch> GetNewsForPlayer(string playerName)
         {
+            var search = new List<NewsSearch>();
             var webClient = new WebClient();
             webClient.Headers.Add("Ocp-Apim-Subscription-Key", "90b093df119545609387ef5131b462e9");
             byte[] searchResults = webClient.DownloadData(string.Format("https://api.cognitive.microsoft.com/bing/v5.0/news/search?q={0}&mkt=en-us", playerName));
-
+            var serializer = new JsonSerializer();
             using (var stream = new MemoryStream(searchResults))
             using (var reader = new StreamReader(stream))
+            using(var jsonReader = new JsonTextReader(reader))
             {
-                return reader.ReadToEnd();
+                search = serializer.Deserialize<NewsSearch>(jsonReader).NewsValues;
             }
         }
 
