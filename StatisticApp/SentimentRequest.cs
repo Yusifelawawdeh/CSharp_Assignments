@@ -10,7 +10,7 @@ namespace StatisticApp
 
     public class SentimenetRequest
     {
-        [JsonProperty(PropertyName ="document")]
+        [JsonProperty(PropertyName ="documents")]
         public List<Document> Documents { get; set; }
     }
 

@@ -30,6 +30,7 @@ namespace StatisticApp
         [JsonProperty(PropertyName = "datePublished")]
         public DateTime DatePublished { get; set; }
         public string category { get; set; }
+        public double SentimentScore { get; set; }
     }
 
     public class Image

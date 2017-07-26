@@ -25,9 +25,25 @@ namespace StatisticApp
             foreach (var player in players)
             {
                 List<NewsResult> newsResults = GetNewsForPlayer(string.Format("{0} {1}", player.FirstName, player.SecondName));
+                SentimentResponse sentimentResponse = GetSentimentResponse(newsResults);
+                foreach (var sentiment in sentimentResponse.Sentiments)
+                {
+                    foreach (var newsResult in newsResults)
+                    {
+                        if (newsResult.Headline == sentiment.Id)
+                        {
+                            double score;
+                            if (double.TryParse(sentiment.Score, out score))
+                            {
+                                newsResult.SentimentScore = score;
+                            }
+                            break;
+                        }
+                    }
+                }
                 foreach (var result in newsResults)
                 {
-                    Console.WriteLine(string.Format("Date: {0:f}, Headline: {1}, Summary: {2} \r\n", result.DatePublished,
+                    Console.WriteLine(string.Format("Sentiment Score: {0:P}, Date: {1:d}, Headline: {2}, Summary: {3} \r\n",result.SentimentScore, result.DatePublished,
                         result.Headline, result.Summary));
                     Console.ReadKey();
                 }
@@ -162,6 +178,28 @@ namespace StatisticApp
             return results;
         }
 
+        public static SentimentResponse GetSentimentResponse(List<NewsResult> newsResults)
+        {
+            var sentimentResponse = new SentimentResponse();
+            var sentimentRequest = new SentimenetRequest();
+            sentimentRequest.Documents = new List<Document>();
+            foreach (var result in newsResults)
+            {
+                sentimentRequest.Documents.Add(new Document {Id = result.Headline, Text = result.Summary});
+            }
+
+            var webClient = new WebClient();
+            webClient.Headers.Add("Ocp-Apim-Subscription-Key", "d090300a5b5f4028b7b5c30f7e2d6a95");
+            webClient.Headers.Add(HttpRequestHeader.Accept, "application/json");
+            webClient.Headers.Add(HttpRequestHeader.ContentType, "application/json");
+            string requestJson = JsonConvert.SerializeObject(sentimentRequest);
+            byte[] requestBytes = Encoding.UTF8.GetBytes(requestJson);
+            byte[] response = webClient.UploadData("https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/sentiment", requestBytes);
+            string sentiments = Encoding.UTF8.GetString(response);
+            sentimentResponse = JsonConvert.DeserializeObject<SentimentResponse>(sentiments);
+            return sentimentResponse;
+
+        }
 
     }
 }
