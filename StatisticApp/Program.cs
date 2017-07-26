@@ -24,11 +24,12 @@ namespace StatisticApp
             var topTenPlayers = GetTopTenPlayers(players);
             foreach (var player in players)
             {
-                List<NewsSearch> newsSearch = GetNewsForPlayer(string.Format("{0} {1}", player.FirstName, player.SecondName));
-                foreach (var search in newsSearch)
+                List<NewsResult> newsResults = GetNewsForPlayer(string.Format("{0} {1}", player.FirstName, player.SecondName));
+                foreach (var result in newsResults)
                 {
-                    Console.WriteLine(string.Format("Date: {0}, Headline: {1}, Summary: {2}", search.NewsValue,
-                        search.ReadLink, search.TotalEstimatedMatches));
+                    Console.WriteLine(string.Format("Date: {0:f}, Headline: {1}, Summary: {2} \r\n", result.DatePublished,
+                        result.Headline, result.Summary));
+                    Console.ReadKey();
                 }
             }
             fileName = Path.Combine(directory.FullName, "topten.json");
@@ -144,9 +145,9 @@ namespace StatisticApp
             }
         }
 
-        public static List<NewsSearch> GetNewsForPlayer(string playerName)
+        public static List<NewsResult> GetNewsForPlayer(string playerName)
         {
-            var search = new List<NewsSearch>();
+            var results = new List<NewsResult>();
             var webClient = new WebClient();
             webClient.Headers.Add("Ocp-Apim-Subscription-Key", "90b093df119545609387ef5131b462e9");
             byte[] searchResults = webClient.DownloadData(string.Format("https://api.cognitive.microsoft.com/bing/v5.0/news/search?q={0}&mkt=en-us", playerName));
@@ -155,8 +156,10 @@ namespace StatisticApp
             using (var reader = new StreamReader(stream))
             using(var jsonReader = new JsonTextReader(reader))
             {
-                search = serializer.Deserialize<NewsSearch>(jsonReader).NewsValues;
+                results = serializer.Deserialize<NewsSearch>(jsonReader).NewsResults;
             }
+
+            return results;
         }
 
 
