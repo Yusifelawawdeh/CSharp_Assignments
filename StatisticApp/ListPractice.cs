@@ -137,6 +137,22 @@ namespace StatisticApp
 
             staffers.Sort();
 
+            Staff newStaff = new Staff() { Name = "Joe", PayGrade = 90200 };
+
+            int index = staffers.BinarySearch(newStaff);
+
+            // version 1
+            //if (index < 0)
+            //{
+            //    staffers.Insert((-index) - 1, newStaff);
+            //}
+
+            // version 2  Bitwise operation
+            if (index < 0)
+            {
+                staffers.Insert(~index, newStaff);
+            }
+
             foreach (Staff staff in staffers)
             {
                 Console.WriteLine($"{staff.Name} is paid {staff.PayGrade}");
@@ -145,6 +161,8 @@ namespace StatisticApp
 
 
         }
+
+     
     }
 
     // comparing things logic
