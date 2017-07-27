@@ -21,5 +21,16 @@
            return Name.GetHashCode() + BlockLevel.GetHashCode();
         }
 
+        public override bool Equals(object obj)
+        {
+            Keeper that = obj as Keeper;
+            if (that == null)
+            {
+                return false;
+            }
+
+            return this.Name == that.Name && this.BlockLevel == that.BlockLevel;
+        }
+
     }
 }
