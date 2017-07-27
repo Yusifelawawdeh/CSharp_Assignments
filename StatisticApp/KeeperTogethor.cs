@@ -10,7 +10,7 @@ namespace StatisticApp
     {
         static void Arbitrary()
         {
-            List<Keeper> keepers = new List<Keeper>
+            HashSet<Keeper> keepers = new HashSet<Keeper>
             {
                 new Keeper() {Name = "Hodor", BlockLevel = 1000},
                 new Keeper() {Name = "Leviathan", BlockLevel = 780},
@@ -20,8 +20,19 @@ namespace StatisticApp
 
             PracticingGenerics practicingGenerics = new PracticingGenerics();
             practicingGenerics.AddKeepers(keepers);
-            
-            foreach (Keeper keeper in practicingGenerics.Keepers)
+
+            LearningDictionary learningDictionary = new LearningDictionary();
+            learningDictionary.AddKeepers2(keepers);
+
+            Keeper joe = new Keeper() {Name = "joe", BlockLevel = 1};
+            keepers.Add(joe);
+            Keeper duplicateJoe = new Keeper() { Name = "joe", BlockLevel = 1 };
+            keepers.Add(duplicateJoe);
+
+            Console.WriteLine(joe.GetHashCode());
+            Console.WriteLine(duplicateJoe.GetHashCode());
+
+            foreach (Keeper keeper in keepers)
             {
                 Console.WriteLine($"{keeper.Name} has a blocking level of {keeper.BlockLevel}");
             }
