@@ -10,7 +10,9 @@ namespace StatisticApp
     {
         private List<Keeper> _keeper = new List<Keeper>();
 
-        public void AddKeepers(List<Keeper> keepers)
+        public List<Keeper> Keepers { get { return _keeper; }}
+
+        public void AddKeepers(IEnumerable<Keeper> keepers)
         {
             _keeper.AddRange(keepers);
         }

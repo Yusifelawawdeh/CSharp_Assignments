@@ -18,6 +18,9 @@ namespace StatisticApp
                 new Keeper() {Name = "Sauron", BlockLevel = 50}
             };
 
+            PracticingGenerics practicingGenerics = new PracticingGenerics();
+            practicingGenerics.AddKeepers(keepers);
+
             foreach (Keeper keeper in keepers)
             {
                         Console.WriteLine($"{keeper.Name} has a blocking level of {keeper.BlockLevel}")
