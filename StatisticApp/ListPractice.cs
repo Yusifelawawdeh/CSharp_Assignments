@@ -93,15 +93,76 @@ namespace StatisticApp
 
         public void SortingLists()
         {
-
             List<string> killerCrocs = new List<string>() { "GoGo", "Mojo", "Hobo", "Trolo" };
 
-            killerCrocs.Remove("Mojo");
-
-
+            killerCrocs.Sort();
         }
+
+        
 
 
     }
 
+
+    public class MathHelpers
+    {
+        public static List<int> GetPowersOf2(int input)
+        {
+            var returningList = new List<int>();
+            for (int i = 0; i < input + 1; i++)
+            {
+                returningList.Add((int)Math.Pow(2, i));
+            }
+
+            return returningList;
+        }
+
+    }
+
+
+
+    public class Brogram
+    {
+        static void BrogrammingStart()
+        {
+            List<Staff> staffers = new List<Staff>
+            {
+                new Staff() {Name = "Margery", PayGrade = 59000},
+                new Staff() {Name = "James", PayGrade = 50000},
+                new Staff() {Name = "Alexander", PayGrade = 79000},
+                new Staff() {Name = "Don", PayGrade = 45000},
+                new Staff() {Name = "Oberin", PayGrade = 120000},
+                new Staff() {Name = "Harvey", PayGrade = 90000}
+            };
+
+            staffers.Sort();
+
+            foreach (Staff staff in staffers)
+            {
+                Console.WriteLine($"{staff.Name} is paid {staff.PayGrade}");
+            }
+
+
+
+        }
+    }
+
+    // comparing things logic
+    public class Staff : IComparable<Staff>
+    {
+        public string Name { get; set; }
+        public int PayGrade { get; set; }
+
+        public int CompareTo(Staff that)
+        {
+            int result = this.Name.CompareTo(that.Name);
+            if (result == 0)
+            {
+                result = this.PayGrade.CompareTo(that.PayGrade);
+            }
+            return result;
+        }
+
+
+    }
 }
