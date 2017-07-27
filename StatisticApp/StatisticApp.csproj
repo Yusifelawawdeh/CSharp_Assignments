@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExcerciseProgram.cs" />
+    <Compile Include="JaggedArrayCells.cs" />
+    <Compile Include="ListPractice.cs" />
     <Compile Include="NewsSearch.cs" />
     <Compile Include="PlayerComparer.cs" />
     <Compile Include="PriceResults.cs" />
