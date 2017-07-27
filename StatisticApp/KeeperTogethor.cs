@@ -20,10 +20,10 @@ namespace StatisticApp
 
             PracticingGenerics practicingGenerics = new PracticingGenerics();
             practicingGenerics.AddKeepers(keepers);
-
-            foreach (Keeper keeper in keepers)
+            
+            foreach (Keeper keeper in practicingGenerics.Keepers)
             {
-                        Console.WriteLine($"{keeper.Name} has a blocking level of {keeper.BlockLevel}")
+                Console.WriteLine($"{keeper.Name} has a blocking level of {keeper.BlockLevel}");
             }
 
         }
