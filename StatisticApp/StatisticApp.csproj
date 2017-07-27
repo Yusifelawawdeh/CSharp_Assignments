@@ -62,9 +62,12 @@
   <ItemGroup>
     <Compile Include="ExcerciseProgram.cs" />
     <Compile Include="JaggedArrayCells.cs" />
+    <Compile Include="Keeper.cs" />
+    <Compile Include="KeeperTogethor.cs" />
     <Compile Include="ListPractice.cs" />
     <Compile Include="NewsSearch.cs" />
     <Compile Include="PlayerComparer.cs" />
+    <Compile Include="PracticingGenerics.cs" />
     <Compile Include="PriceResults.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
