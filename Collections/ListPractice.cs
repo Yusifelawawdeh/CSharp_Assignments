@@ -34,7 +34,7 @@ namespace StatisticApp
 
         public void CrocsList()
         {
-            List<string> crocs = new List<string>() {"harvey", "Alexander", "Rex", "Rovers"};
+            List<string> crocs = new List<string>() { "harvey", "Alexander", "Rex", "Rovers" };
             var crocAmount = crocs.Capacity;
             Console.Write(crocAmount);
 
@@ -43,9 +43,9 @@ namespace StatisticApp
 
         public void AddingLists()
         {
-            List<string> killerCrocs = new List<string>() {"GoGo", "Mojo", "Hobo", "Trolo"};
+            List<string> killerCrocs = new List<string>() { "GoGo", "Mojo", "Hobo", "Trolo" };
 
-            List<String> KillerCrocsNewBand = new List<string>(4) {"GoGo", "Mojo", "Hobo", "Trolo"};
+            List<String> KillerCrocsNewBand = new List<string>(4) { "GoGo", "Mojo", "Hobo", "Trolo" };
 
             List<String> KillerCrocsNewNewBand = new List<string>(KillerCrocsNewBand);
 
@@ -98,11 +98,7 @@ namespace StatisticApp
             killerCrocs.Sort();
         }
 
-        
-
-
     }
-
 
     public class MathHelpers
     {
@@ -116,10 +112,7 @@ namespace StatisticApp
 
             return returningList;
         }
-
     }
-
-
 
     public class Brogram
     {
@@ -161,8 +154,6 @@ namespace StatisticApp
 
 
         }
-
-     
     }
 
     // comparing things logic
@@ -170,7 +161,6 @@ namespace StatisticApp
     {
         public string Name { get; set; }
         public int PayGrade { get; set; }
-
         public int CompareTo(Staff that)
         {
             int result = this.Name.CompareTo(that.Name);
@@ -180,7 +170,8 @@ namespace StatisticApp
             }
             return result;
         }
-
-
     }
+
+
+
 }

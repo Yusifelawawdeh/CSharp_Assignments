@@ -10,6 +10,7 @@ namespace StatisticApp
     {
         static void Arbitrary()
         {
+
             HashSet<Keeper> keepers = new HashSet<Keeper>
             {
                 new Keeper() {Name = "Hodor", BlockLevel = 1000},
@@ -17,7 +18,6 @@ namespace StatisticApp
                 new Keeper() {Name = "JoJo", BlockLevel = 6000},
                 new Keeper() {Name = "Sauron", BlockLevel = 50}
             };
-
             PracticingGenerics practicingGenerics = new PracticingGenerics();
             practicingGenerics.AddKeepers(keepers);
 

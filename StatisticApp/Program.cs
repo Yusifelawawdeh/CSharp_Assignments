@@ -43,7 +43,7 @@ namespace StatisticApp
                 }
                 foreach (var result in newsResults)
                 {
-                    Console.WriteLine(string.Format("Sentiment Score: {0:P}, Date: {1:d}, Headline: {2}, Summary: {3} \r\n",result.SentimentScore, result.DatePublished,
+                    Console.WriteLine(string.Format("Sentiment Score: {0:P}, Date: {1:d}, Headline: {2}, Summary: {3} \r\n", result.SentimentScore, result.DatePublished,
                         result.Headline, result.Summary));
                     Console.ReadKey();
                 }
@@ -116,9 +116,9 @@ namespace StatisticApp
             var players = new List<Player>();
             var serializer = new JsonSerializer();
             using (var reader = new StreamReader(fileName))
-            using(var jsonReader = new JsonTextReader(reader))
+            using (var jsonReader = new JsonTextReader(reader))
             {
-               players = serializer.Deserialize<List<Player>>(jsonReader);
+                players = serializer.Deserialize<List<Player>>(jsonReader);
             }
             return players;
         }
@@ -170,7 +170,7 @@ namespace StatisticApp
             var serializer = new JsonSerializer();
             using (var stream = new MemoryStream(searchResults))
             using (var reader = new StreamReader(stream))
-            using(var jsonReader = new JsonTextReader(reader))
+            using (var jsonReader = new JsonTextReader(reader))
             {
                 results = serializer.Deserialize<NewsSearch>(jsonReader).NewsResults;
             }
@@ -185,7 +185,7 @@ namespace StatisticApp
             sentimentRequest.Documents = new List<Document>();
             foreach (var result in newsResults)
             {
-                sentimentRequest.Documents.Add(new Document {Id = result.Headline, Text = result.Summary});
+                sentimentRequest.Documents.Add(new Document { Id = result.Headline, Text = result.Summary });
             }
 
             var webClient = new WebClient();

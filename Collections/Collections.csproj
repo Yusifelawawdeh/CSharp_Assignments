@@ -48,7 +48,6 @@
     <Compile Include="LearningDictionary.cs" />
     <Compile Include="ListPractice.cs" />
     <Compile Include="PracticingGenerics.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -10,7 +10,7 @@ namespace StatisticApp
     class LearningDictionary
     {
         private HashSet<Keeper> _keepers = new HashSet<Keeper>();
-        public IEnumerable<Keeper> Keepers {get { return _keepers; }}
+        public IEnumerable<Keeper> Keepers { get { return _keepers; } }
 
         public void AddKeepers2(IEnumerable<Keeper> keepers)
         {

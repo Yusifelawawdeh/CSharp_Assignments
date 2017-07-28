@@ -42,7 +42,7 @@ namespace StatisticApp
                 foreach (Cell cell in row)
                 {
                     System.Console.Write(cell);
-                } 
+                }
             }
         }
 
@@ -83,7 +83,7 @@ namespace StatisticApp
                 {
                     for (int heightIndex = 0; heightIndex < sheet.GetLength(2); heightIndex++)
                     {
-                        sheet[widthIndex, lengthIndex, heightIndex] = new Cell(); 
+                        sheet[widthIndex, lengthIndex, heightIndex] = new Cell();
                     }
                 }
             }
@@ -107,7 +107,7 @@ namespace StatisticApp
 
         public void CopyPastaArray()
         {
-            int[] ages = {24, 34, 56};
+            int[] ages = { 24, 34, 56 };
 
             int[] agesCopy = new int[4];
 

@@ -18,7 +18,7 @@
 
         public override int GetHashCode()
         {
-           return Name.GetHashCode() + BlockLevel.GetHashCode();
+            return Name.GetHashCode() + BlockLevel.GetHashCode();
         }
 
         public override bool Equals(object obj)
