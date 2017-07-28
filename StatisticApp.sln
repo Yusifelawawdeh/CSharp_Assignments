@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "Collections\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise", "Exercise\Exercise.csproj", "{28B93B55-855F-4D98-9BB7-A300FC75C491}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionsMethod", "ExtensionsMethod\ExtensionsMethod.csproj", "{B1F91900-63B7-4AFE-8BD7-17E5C26D2707}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionGeneric", "ExtensionGeneric\ExtensionGeneric.csproj", "{72E1704A-A165-49A8-814E-F846E88862D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{99D14863-6C79-4D64-A3DA-CE72DBB8C3CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +33,20 @@ Global
 		{28B93B55-855F-4D98-9BB7-A300FC75C491}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28B93B55-855F-4D98-9BB7-A300FC75C491}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28B93B55-855F-4D98-9BB7-A300FC75C491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1F91900-63B7-4AFE-8BD7-17E5C26D2707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1F91900-63B7-4AFE-8BD7-17E5C26D2707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1F91900-63B7-4AFE-8BD7-17E5C26D2707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1F91900-63B7-4AFE-8BD7-17E5C26D2707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E1704A-A165-49A8-814E-F846E88862D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E1704A-A165-49A8-814E-F846E88862D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E1704A-A165-49A8-814E-F846E88862D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E1704A-A165-49A8-814E-F846E88862D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B1F91900-63B7-4AFE-8BD7-17E5C26D2707} = {99D14863-6C79-4D64-A3DA-CE72DBB8C3CE}
+		{72E1704A-A165-49A8-814E-F846E88862D0} = {99D14863-6C79-4D64-A3DA-CE72DBB8C3CE}
 	EndGlobalSection
 EndGlobal
