@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExtensionGeneric
+namespace ExtensionGeneric.Common
 {
     public static class IntExtensions
     {

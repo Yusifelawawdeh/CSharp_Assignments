@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ExtensionGeneric.Collections.Generic;
+using ExtensionGeneric.Common;
+//using methods in a specific class ~~{Scoping}~~
+//using static ExtensionGeneric.Common.IntExtensions;
 
 namespace ExtensionsMethod
 {
@@ -11,6 +14,12 @@ namespace ExtensionsMethod
     {
         static void Main(string[] args)
         {
+            5.IsEven();
+
+            string myString = null;
+            myString.Split(',', 3);
+            myString.IsNullOrEmpty();
+
             var synonymsForBest = new List<string>
             {
                 "cool",
