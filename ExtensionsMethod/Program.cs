@@ -35,6 +35,8 @@ namespace ExtensionsMethod
                 "noice"
             };
 
+            var best = synonymsForBest.FirstOr(s => s.Length.IsEven(), synonymsForBest.RandomItem);
+
             Console.WriteLine($"My man... i am the only {synonymsForBest.RandomItem()} person you will ever meet.");
             Console.ReadLine();
         }
