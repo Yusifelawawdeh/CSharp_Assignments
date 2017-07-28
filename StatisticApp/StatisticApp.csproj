@@ -71,7 +71,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="repetition.cs" />
     <Compile Include="SentimentRequest.cs" />
     <Compile Include="SentimentResponse.cs" />
   </ItemGroup>
