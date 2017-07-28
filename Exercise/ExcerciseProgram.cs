@@ -4,7 +4,7 @@ namespace StatisticApp
 {
     class Excercise
     {
-        static void AnotherConsoleExcersiseApp()
+        static void Main(string[] args)
         {
             int runningTotal = 0;
             bool keepGoing = true;
