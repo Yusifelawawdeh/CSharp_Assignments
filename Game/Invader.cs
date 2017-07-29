@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    class Program
+    class Invader
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }

@@ -1,0 +1,8 @@
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\ExtensionsMethod\bin\Debug\ExtensionsMethod.exe.config
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\ExtensionsMethod\bin\Debug\ExtensionsMethod.exe
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\ExtensionsMethod\bin\Debug\ExtensionsMethod.pdb
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\ExtensionsMethod\bin\Debug\ExtensionGeneric.dll
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\ExtensionsMethod\bin\Debug\ExtensionGeneric.pdb
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\ExtensionsMethod\obj\Debug\ExtensionsMethod.csprojResolveAssemblyReference.cache
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\ExtensionsMethod\obj\Debug\ExtensionsMethod.exe
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\ExtensionsMethod\obj\Debug\ExtensionsMethod.pdb

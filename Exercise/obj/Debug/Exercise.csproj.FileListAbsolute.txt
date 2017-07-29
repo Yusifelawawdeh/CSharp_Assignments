@@ -1,0 +1,6 @@
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\Exercise\bin\Debug\Exercise.exe.config
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\Exercise\bin\Debug\Exercise.exe
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\Exercise\bin\Debug\Exercise.pdb
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\Exercise\obj\Debug\Exercise.csprojResolveAssemblyReference.cache
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\Exercise\obj\Debug\Exercise.exe
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\Exercise\obj\Debug\Exercise.pdb
