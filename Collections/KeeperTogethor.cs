@@ -8,7 +8,7 @@ namespace StatisticApp
 {
     class KeeperTogethor
     {
-        static void Arbitrary()
+        static void Main()
         {
 
             HashSet<Keeper> keepers = new HashSet<Keeper>
