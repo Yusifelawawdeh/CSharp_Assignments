@@ -13,7 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ToDoList
+namespace ToDoList.views
+
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
