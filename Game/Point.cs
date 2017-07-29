@@ -18,7 +18,7 @@ namespace Game
         }
 
         /// <summary>
-        /// Cartesion Distance Formula does some math and returns the distance to a tower on a map
+        /// Cartesion Distance Formula does some math and returns the distance from a point to another point on the map
         /// </summary>
         /// <param name="x"> takes an x coordinate </param>
         /// <param name="y">takes a y coordinate</param>
@@ -37,6 +37,10 @@ namespace Game
             // refactored version of the formula
             // return (int)Math.Sqrt(Math.Pow(X-x, 2) + Math.Pow(y-y, 2));
             
+        }
+        public int DistanceTo(Point point)
+        {
+            return DistanceTo(point.X, point.Y);
         }
 
     }

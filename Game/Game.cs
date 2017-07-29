@@ -12,10 +12,24 @@ namespace Game
         {
             // instantiated objects
             Map map = new Map(8, 5);
-            Point point = new Point(4, 2);
 
-            Console.WriteLine(point.DistanceTo(5,5));
-            Console.ReadLine();
+            try
+            {
+                MapLocation mapLocation = new MapLocation(4, 2, map);
+            }
+            catch (OutOfBoundsException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (GameExceptions ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
         }
     }
 }
