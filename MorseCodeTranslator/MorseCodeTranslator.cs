@@ -21,7 +21,7 @@ namespace MorseCodeTranslator
                 }
 
                 string output = ToMorseCode(input);
-                Console.WriteLine(output); 
+                Console.WriteLine(output);
             }
 
         }
@@ -87,6 +87,18 @@ namespace MorseCodeTranslator
             {'Ñ', "--.--"},
             {'Ü', "..--"}
         };
+
+        private static Dictionary<string, char> _morseCodeToText = new Dictionary<string, char>();
+
+        static MorseCodeTranslator()
+        {
+            foreach (KeyValuePair<char, string> code in _textToMorseCode)
+            {
+                // diferent way of assigning the code to the key val pair
+                //_morseCodeToText[code.Value] = code.Key;
+                _morseCodeToText.Add(code.Value, code.Key);
+            }
+        }
 
         public static string ToMorseCode(string input)
         {
