@@ -4,5 +4,18 @@
 
     <FontFamily x:Key="HelveticaRegular">pack://application;,,,/Fonts/Helvetica_World/#Helvetica World</FontFamily>
     <FontFamily x:Key="HelveticaBold">pack://application;,,,/Fonts/Helvetica_World/#Helvetica World Bold</FontFamily>
+    <Style TargetType="{x:Type Control}" x:Key="BaseStyle">
+        <Setter Property="FontFamily" Value="{StaticResource HelveticaBold}"/>
+    </Style>
+    <Style TargetType="{x:Type TextBlock}" x:Key="BaseTextBlockStyle">
+        <Setter Property="FontFamily" Value="{StaticResource HelveticaBold}"/>
+    </Style>
 
+    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource BaseStyle}"/>
+    <Style TargetType="{x:Type Label}" BasedOn="{StaticResource BaseStyle}"/>
+    <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource BaseStyle}"/>
+    <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}"/>
+    <Style TargetType="{x:Type ListView}" BasedOn="{StaticResource BaseStyle}"/>
+    <Style TargetType="{x:Type GroupBox}" BasedOn="{StaticResource BaseStyle}"/>
+    <Style TargetType="{x:Type ListBox}" BasedOn="{StaticResource BaseStyle}"/>
 </ResourceDictionary>

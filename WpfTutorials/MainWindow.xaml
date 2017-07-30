@@ -10,7 +10,10 @@
         Icon="Images/yusif.png"
         Title="MainWindow" Height="350" Width="525">
     <StackPanel>
-        <TextBlock Text="Hello World!!" FontSize="40" FontFamily="{StaticResource HelveticaBold}" />
-        <TextBlock Text="Hello World!!" FontSize="40" FontFamily="{StaticResource HelveticaRegular}" />
+        <TextBox HorizontalAlignment="Center" Text="hello World"/>
+        <Label HorizontalAlignment="Center" Content="Hello World"/>
+        <Button Content="Hello World" Margin="30" Width="Auto" Height="20"/>
+        <TextBlock HorizontalAlignment="Center"  Text="Hello World!!" FontSize="40" FontFamily="{StaticResource HelveticaBold}" />
+        <TextBlock HorizontalAlignment="Center" Text="Hello World!!" FontSize="40" FontFamily="{StaticResource HelveticaRegular}" />
     </StackPanel>
 </Window>
