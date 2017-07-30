@@ -16,5 +16,10 @@ namespace Game
             }
         }
 
+        public bool InRangeOf(MapLocation location, int range)
+        {
+            return DistanceTo(location) <= range;
+        }
+
     }
 }

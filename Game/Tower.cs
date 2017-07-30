@@ -17,16 +17,31 @@ namespace Game
 
         public void FireOnInvaders(Invader[] invaders)
         {
-            int index = 0;
+            // honestly while loop reads easier
+            //int index = 0;
+            //while (index < invaders.Length)
+            //{
+            //    Invader invader = invaders[index];
+            //    // do stuff to invader
+            //    index++;
+            //}
 
-            while (index < invaders.Length)
+            // for loop
+            //for (int i = 0; i < invaders.Length; i++)
+            //{
+            //    Invader invader = invaders[i];
+            //    // do stuff to invader
+            //}
+
+            foreach (Invader invader in invaders)
             {
-                Invader invader = invaders[index];
-                // do stuff to invader
-
-                index++;
+                //do stuff with invader
+                if (invader.IsAlive && _location.InRangeOf(invader.Location, 1))
+                {
+                    invader.DecreaseHealth(1);
+                    break;
+                }
             }
-
         }
 
     }
