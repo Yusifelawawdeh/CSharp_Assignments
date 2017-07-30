@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
+using WpfTutorials.Window;
 
 namespace WpfTutorials.ViewModel
 {
@@ -14,15 +15,21 @@ namespace WpfTutorials.ViewModel
     /// </summary>
     class WindowViewModel : BaseViewModel
     {
-        private Window _window;
+        private System.Windows.Window _window;
 
         private int _outerMarginSize = 3;
 
         private int _windowRadius = 3;
 
+        public double WindowMinWidth { get; set; } = 400;
+
+        public double WindowMinHeight { get; set; } = 400;
+
         public int ResizeBorder { get; set; } = 6;
 
         public Thickness ResizeBorderThinckness => new Thickness(ResizeBorder + OuterMarginSize);
+
+        public Thickness InnerContentPadding => new Thickness(ResizeBorder);
 
         public int OuterMarginSize
         {
@@ -51,7 +58,7 @@ namespace WpfTutorials.ViewModel
 
 
 
-        public WindowViewModel(Window window)
+        public WindowViewModel(System.Windows.Window window)
         {
             _window = window;
 
@@ -64,11 +71,13 @@ namespace WpfTutorials.ViewModel
                 OnPropertyChanged(nameof(WindowCornerRadius));
             };
 
-            MinimizeCommand = new RelayCommand(() => _window.WindowState = WindowState.Maximized);
+            MinimizeCommand = new RelayCommand(() => _window.WindowState = WindowState.Minimized);
             MaximizeCommand = new RelayCommand(() => _window.WindowState ^= WindowState.Maximized);
             CloseCommand = new RelayCommand(() => _window.Close());
             SystemMenuCommand = new RelayCommand(() => SystemCommands.ShowSystemMenu(_window, GetmousePosition()));
 
+            //fix window resize issue 
+            var resizer = new WindowResizer(_window);
 
 
         }
