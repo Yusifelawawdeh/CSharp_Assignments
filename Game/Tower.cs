@@ -8,38 +8,47 @@ namespace Game
 {
     class Tower
     {
+        private const int _range = 1;
+        private const int _power = 1;
         private readonly MapLocation _location;
+        private const double _accuracy = .75;
+
+        private static readonly System.Random _random = new System.Random();
 
         public Tower(MapLocation location)
         {
             _location = location;
         }
 
+        public bool IsSuccessfulShot()
+        {
+           return _random.NextDouble() < _accuracy;
+        }
+
         public void FireOnInvaders(Invader[] invaders)
         {
-            // honestly while loop reads easier
-            //int index = 0;
-            //while (index < invaders.Length)
-            //{
-            //    Invader invader = invaders[index];
-            //    // do stuff to invader
-            //    index++;
-            //}
-
-            // for loop
-            //for (int i = 0; i < invaders.Length; i++)
-            //{
-            //    Invader invader = invaders[i];
-            //    // do stuff to invader
-            //}
 
             foreach (Invader invader in invaders)
             {
                 //do stuff with invader
-                if (invader.IsAlive && _location.InRangeOf(invader.Location, 1))
+                if (invader.IsAlive && _location.InRangeOf(invader.Location, _range))
                 {
-                    invader.DecreaseHealth(1);
+                    if (IsSuccessfulShot())
+                    {
+                        invader.DecreaseHealth(_power);
+                        Console.WriteLine("Shot the invader !!");
+
+                        if (invader.IsDead)
+                        {
+                            Console.WriteLine("Invader is toast !!");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Missed the invader !!");
+                    }
                     break;
+
                 }
             }
         }
