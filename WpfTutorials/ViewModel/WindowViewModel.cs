@@ -38,6 +38,8 @@ namespace WpfTutorials.ViewModel
 
         public CornerRadius WindowCornerRadius => new CornerRadius(WindowRadius);
 
+        public int TitleHeight { get; set; } = 42;
+
         public WindowViewModel(Window window)
         {
             _window = window;

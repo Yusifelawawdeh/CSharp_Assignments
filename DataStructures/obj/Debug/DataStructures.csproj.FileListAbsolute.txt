@@ -1,0 +1,5 @@
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\DataStructures\bin\Debug\DataStructures.exe.config
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\DataStructures\bin\Debug\DataStructures.exe
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\DataStructures\bin\Debug\DataStructures.pdb
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\DataStructures\obj\Debug\DataStructures.exe
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\DataStructures\obj\Debug\DataStructures.pdb

@@ -1,6 +1,5 @@
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\MorseCodeTranslator\bin\Debug\MorseCodeTranslator.exe.config
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\MorseCodeTranslator\bin\Debug\MorseCodeTranslator.exe
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\MorseCodeTranslator\bin\Debug\MorseCodeTranslator.pdb
-C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\MorseCodeTranslator\obj\Debug\MorseCodeTranslator.csprojResolveAssemblyReference.cache
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\MorseCodeTranslator\obj\Debug\MorseCodeTranslator.exe
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\MorseCodeTranslator\obj\Debug\MorseCodeTranslator.pdb

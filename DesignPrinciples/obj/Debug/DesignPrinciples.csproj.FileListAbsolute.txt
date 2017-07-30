@@ -1,0 +1,5 @@
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\DesignPrinciples\bin\Debug\DesignPrinciples.exe.config
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\DesignPrinciples\bin\Debug\DesignPrinciples.exe
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\DesignPrinciples\bin\Debug\DesignPrinciples.pdb
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\DesignPrinciples\obj\Debug\DesignPrinciples.exe
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\DesignPrinciples\obj\Debug\DesignPrinciples.pdb

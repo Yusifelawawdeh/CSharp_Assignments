@@ -1,6 +1,5 @@
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\LinqLearning\bin\Debug\LinqLearning.exe.config
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\LinqLearning\bin\Debug\LinqLearning.exe
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\LinqLearning\bin\Debug\LinqLearning.pdb
-C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\LinqLearning\obj\Debug\LinqLearning.csprojResolveAssemblyReference.cache
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\LinqLearning\obj\Debug\LinqLearning.exe
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\LinqLearning\obj\Debug\LinqLearning.pdb

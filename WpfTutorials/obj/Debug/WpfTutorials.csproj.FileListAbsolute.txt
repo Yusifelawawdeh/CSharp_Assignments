@@ -28,3 +28,4 @@ C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\Styles\Colors.baml
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\Styles\Fonts.baml
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\Styles\Text.baml
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\GeneratedInternalTypeHelper.g.cs
