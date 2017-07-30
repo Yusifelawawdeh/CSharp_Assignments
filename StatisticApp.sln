@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MorseCodeTranslator", "Mors
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game", "Game\Game.csproj", "{239FB7B1-2AEC-4415-88CD-38D883DF7845}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStructures\DataStructures.csproj", "{275D3D81-2165-4D56-9D7E-6FEF027A186F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqLearning", "LinqLearning\LinqLearning.csproj", "{BA2F83DD-D328-4AE1-9F24-0EBB42818275}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +57,14 @@ Global
 		{239FB7B1-2AEC-4415-88CD-38D883DF7845}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{239FB7B1-2AEC-4415-88CD-38D883DF7845}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{239FB7B1-2AEC-4415-88CD-38D883DF7845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{275D3D81-2165-4D56-9D7E-6FEF027A186F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{275D3D81-2165-4D56-9D7E-6FEF027A186F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{275D3D81-2165-4D56-9D7E-6FEF027A186F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{275D3D81-2165-4D56-9D7E-6FEF027A186F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA2F83DD-D328-4AE1-9F24-0EBB42818275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA2F83DD-D328-4AE1-9F24-0EBB42818275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA2F83DD-D328-4AE1-9F24-0EBB42818275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA2F83DD-D328-4AE1-9F24-0EBB42818275}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
