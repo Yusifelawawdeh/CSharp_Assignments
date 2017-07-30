@@ -10,7 +10,7 @@
         x:Name="AppWindow"
         WindowStartupLocation="CenterScreen"
         Icon="Images/yusif.png"
-        Title="Pan Oculum" Height="600" Width="525">
+        Title="Pan Oculum" Height="600" Width="525" >
     <Window.Resources>
         <Style TargetType="{x:Type local:MainWindow}">
             <Setter Property="Template">
@@ -51,9 +51,16 @@
                                             <Image Source="/Images/yusif.png"/>
                                         </Button>
                                         <!-- Title Text -->
-                                        <Viewbox Grid.Column="1" Margin="0">
-                                            <TextBlock Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Title, FallbackValue='Pan Oculum'}" FontWeight="Light"/>
+                                        <Viewbox Grid.Column="1">
+                                            <TextBlock Style="{StaticResource HeaderText}" Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Title, FallbackValue='Pan Oculum'}"/>
                                         </Viewbox>
+                                        
+                                        <!-- three buttons -->
+                                        <StackPanel Grid.Column="2" Orientation="Horizontal">
+                                            <Button Command="{Binding MinimizeCommand}" Style="{StaticResource WindowControlButton}"  Content="_"/>
+                                            <Button Command="{Binding MaximizeCommand}" Style="{StaticResource WindowControlButton}" Content="[ ]"/>
+                                            <Button Command="{Binding CloseCommand}" Style="{StaticResource WindowControlButton}" Content="X"/>
+                                        </StackPanel>
                                         
                                          
                                     </Grid>

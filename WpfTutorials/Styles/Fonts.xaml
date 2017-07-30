@@ -8,7 +8,7 @@
         <Setter Property="FontFamily" Value="{StaticResource HelveticaBold}"/>
     </Style>
     <Style TargetType="{x:Type TextBlock}" x:Key="BaseTextBlockStyle">
-        <Setter Property="FontFamily" Value="{StaticResource HelveticaBold}"/>
+        <Setter Property="FontFamily" Value="{StaticResource HelveticaRegular}"/>
     </Style>
 
     <Style TargetType="{x:Type Button}" BasedOn="{StaticResource BaseStyle}"/>
