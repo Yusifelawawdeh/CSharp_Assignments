@@ -1,0 +1,14 @@
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\bin\Debug\WpfTutorials.exe.config
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\bin\Debug\WpfTutorials.exe
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\bin\Debug\WpfTutorials.pdb
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\WpfTutorials.csprojResolveAssemblyReference.cache
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\MainWindow.g.cs
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\App.g.cs
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\WpfTutorials_MarkupCompile.cache
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\WpfTutorials_MarkupCompile.lref
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\MainWindow.baml
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\WpfTutorials.g.resources
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\WpfTutorials.Properties.Resources.resources
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\WpfTutorials.csproj.GenerateResource.Cache
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\WpfTutorials.exe
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\WpfTutorials.pdb
