@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\App.xaml
-4708921736
+61062230322
 
 11-11468786
 70-81170741
-MainWindow.xaml;Styles\Buttons.xaml;Styles\Colors.xaml;Styles\Fonts.xaml;
+MainWindow.xaml;Styles\Windows.xaml;Styles\Buttons.xaml;Styles\Colors.xaml;Styles\Fonts.xaml;Styles\Text.xaml;
 
 True
 

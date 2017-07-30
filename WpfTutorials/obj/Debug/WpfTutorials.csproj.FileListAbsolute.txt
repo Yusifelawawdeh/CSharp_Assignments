@@ -20,3 +20,11 @@ C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\bin\Debug\Microsoft.Practices.ServiceLocation.xml
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\bin\Debug\Prism.xml
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\bin\Debug\Prism.Wpf.xml
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\bin\Debug\Microsoft.Windows.Shell.dll
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\bin\Debug\Microsoft.Windows.Shell.pdb
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\App.baml
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\Styles\Windows.baml
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\Styles\Buttons.baml
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\Styles\Colors.baml
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\Styles\Fonts.baml
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\Styles\Text.baml

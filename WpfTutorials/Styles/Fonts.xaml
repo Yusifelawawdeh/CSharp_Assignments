@@ -1,5 +1,8 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:WpfTutorials">
-    
+
+    <FontFamily x:Key="HelveticaRegular">pack://application;,,,/Fonts/Helvetica_World/#Helvetica World</FontFamily>
+    <FontFamily x:Key="HelveticaBold">pack://application;,,,/Fonts/Helvetica_World/#Helvetica World Bold</FontFamily>
+
 </ResourceDictionary>

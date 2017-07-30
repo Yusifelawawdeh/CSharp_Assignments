@@ -92,6 +92,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Styles\Windows.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Styles\Buttons.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -101,6 +105,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Styles\Fonts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Text.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -123,10 +131,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Resource Include="Fonts\Helvetica World\HelveticaWorld-Bold.ttf" />
-    <Resource Include="Fonts\Helvetica World\HelveticaWorld-BoldItalic.ttf" />
-    <Resource Include="Fonts\Helvetica World\HelveticaWorld-Italic.ttf" />
-    <Resource Include="Fonts\Helvetica World\HelveticaWorld-Regular.ttf" />
+    <Resource Include="Fonts\Helvetica_World\HelveticaWorld-Bold.ttf" />
+    <Resource Include="Fonts\Helvetica_World\HelveticaWorld-BoldItalic.ttf" />
+    <Resource Include="Fonts\Helvetica_World\HelveticaWorld-Italic.ttf" />
+    <Resource Include="Fonts\Helvetica_World\HelveticaWorld-Regular.ttf" />
     <Resource Include="Fonts\Helvetica\HelveticaInseratLTStd-Roman.otf" />
     <Resource Include="Fonts\Helvetica\HelveticaLTStd-Blk.otf" />
     <Resource Include="Fonts\Helvetica\HelveticaLTStd-BlkCond.otf" />
