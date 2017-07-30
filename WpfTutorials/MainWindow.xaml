@@ -5,9 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfTutorials"
         mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="True"
         Icon="Images/yusif.png"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+            
     </Grid>
 </Window>

@@ -12,3 +12,11 @@ C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\WpfTutorials.csproj.GenerateResource.Cache
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\WpfTutorials.exe
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\obj\Debug\WpfTutorials.pdb
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\bin\Debug\Prism.dll
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\bin\Debug\Prism.Wpf.dll
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\bin\Debug\Prism.xml
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\WpfTutorials\bin\Debug\Prism.Wpf.xml
