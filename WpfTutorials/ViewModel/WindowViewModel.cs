@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Input;
 
 namespace WpfTutorials.ViewModel
 {
@@ -14,9 +16,9 @@ namespace WpfTutorials.ViewModel
     {
         private Window _window;
 
-        private int _outerMarginSize = 10;
+        private int _outerMarginSize = 3;
 
-        private int _windowRadius = 10;
+        private int _windowRadius = 3;
 
         public int ResizeBorder { get; set; } = 6;
 
@@ -38,7 +40,16 @@ namespace WpfTutorials.ViewModel
 
         public CornerRadius WindowCornerRadius => new CornerRadius(WindowRadius);
 
-        public int TitleHeight { get; set; } = 42;
+        public int TitleHeight { get; set; } = 25;
+
+        public GridLength TitleHeightGridlength => new GridLength(TitleHeight + ResizeBorder);
+
+        public ICommand MinimizeCommand { get; set; }
+        public ICommand MaximizeCommand { get; set; }
+        public ICommand CloseCommand { get; set; }
+        public ICommand SystemMenuCommand { get; set; }
+
+
 
         public WindowViewModel(Window window)
         {
@@ -53,7 +64,36 @@ namespace WpfTutorials.ViewModel
                 OnPropertyChanged(nameof(WindowCornerRadius));
             };
 
+            MinimizeCommand = new RelayCommand(() => _window.WindowState = WindowState.Maximized);
+            MaximizeCommand = new RelayCommand(() => _window.WindowState ^= WindowState.Maximized);
+            CloseCommand = new RelayCommand(() => _window.Close());
+            SystemMenuCommand = new RelayCommand(() => SystemCommands.ShowSystemMenu(_window, GetmousePosition()));
+
+
+
         }
+
+        #region Private Helpers
+        [DllImport("user32.dll")]
+        [return: MarshalAs(UnmanagedType.Bool)]
+
+        internal static extern bool GetCursorPos(ref Win32Point pt);
+
+        [StructLayout(LayoutKind.Sequential)]
+        internal struct Win32Point
+        {
+            public Int32 X;
+            public Int32 Y;
+        };
+
+        private static Point GetmousePosition()
+        {
+            Win32Point w32Mouse = new Win32Point();
+            GetCursorPos(ref w32Mouse);
+            return new Point(w32Mouse.X, w32Mouse.Y);
+        }
+
+        #endregion
 
     }
 }

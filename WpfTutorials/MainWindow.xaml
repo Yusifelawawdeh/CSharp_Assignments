@@ -10,16 +10,54 @@
         x:Name="AppWindow"
         WindowStartupLocation="CenterScreen"
         Icon="Images/yusif.png"
-        Title="Hello, Freind!!" Height="600" Width="525">
+        Title="Pan Oculum" Height="600" Width="525">
     <Window.Resources>
         <Style TargetType="{x:Type local:MainWindow}">
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Window}">
                         <!-- Main window reziable outline margin-->
-                        <Border Background="Green" Padding="{Binding OuterMarginSizeThickness, FallbackValue=10}">
-                            <Grid Background="Red">
-                                
+                        <Border Padding="{Binding OuterMarginSizeThickness, FallbackValue=10}">
+                            
+                            <!-- Main Window Outliner-->
+                            <Grid>
+                                <!-- Main border and drop shadow-->
+                                <Border CornerRadius="{Binding WindowCornerRadius, FallbackValue=3}" Background="{Binding ForeGroundLight, FallbackValue=White}">
+                                    <Border.Effect>
+                                        <DropShadowEffect Direction="217" ShadowDepth="0" Opacity="0.2"/>
+                                    </Border.Effect>
+                                </Border>
+                                <!-- Main Window Content-->
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <!-- Title bar-->
+                                        <RowDefinition Height="{Binding TitleHeightGridLength, FallbackValue=25}"/>
+                                        <!-- Drop Shadow-->
+                                        <RowDefinition Height="Auto"/>
+                                        <!-- Window Content-->
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid Grid.Column="0" Panel.ZIndex="1">
+                                        <Grid.ColumnDefinitions>
+                                            <!-- Icon -->
+                                            <ColumnDefinition Width="Auto"/>
+                                            <!-- Title -->
+                                            <ColumnDefinition Width="*"/>
+                                            <!-- Window Buttons-->
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <!-- Icon -->
+                                        <Button Command="{Binding SystemMenuCommand}" Style="{StaticResource SystemIconButton}">
+                                            <Image Source="/Images/yusif.png"/>
+                                        </Button>
+                                        <!-- Title Text -->
+                                        <Viewbox Grid.Column="1" Margin="0">
+                                            <TextBlock Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Title, FallbackValue='Pan Oculum'}" FontWeight="Light"/>
+                                        </Viewbox>
+                                        
+                                         
+                                    </Grid>
+                                </Grid>
                             </Grid>
                         </Border>
                     </ControlTemplate>
@@ -33,6 +71,7 @@
             ResizeBorderThickness="{Binding ResizeBorderThinckness}"
             CaptionHeight="{Binding TitleHeight}"
             GlassFrameThickness="0"
+            CornerRadius="0"
             />
     </WindowChrome.WindowChrome>
     <Grid Background="Azure">
