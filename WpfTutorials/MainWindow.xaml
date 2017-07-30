@@ -7,13 +7,16 @@
         mc:Ignorable="d"
         WindowStyle="None"
         AllowsTransparency="True"
+        x:Name="AppWindow"
+        WindowStartupLocation="CenterScreen"
         Icon="Images/yusif.png"
-        Title="MainWindow" Height="350" Width="525">
-    <StackPanel>
-        <TextBox HorizontalAlignment="Center" Text="hello World"/>
-        <Label HorizontalAlignment="Center" Content="Hello World"/>
-        <Button Content="Hello World" Margin="30" Width="Auto" Height="20"/>
-        <TextBlock HorizontalAlignment="Center"  Text="Hello World!!" FontSize="40" FontFamily="{StaticResource HelveticaBold}" />
-        <TextBlock HorizontalAlignment="Center" Text="Hello World!!" FontSize="40" FontFamily="{StaticResource HelveticaRegular}" />
-    </StackPanel>
+        Title="Hello, Freind!!" Height="600" Width="525">
+    <WindowChrome.WindowChrome>
+        <WindowChrome 
+            ResizeBorderThickness="{Binding ResizeBorderThinckness}"
+            />
+    </WindowChrome.WindowChrome>
+    <Grid Background="Red">
+        
+    </Grid>
 </Window>
