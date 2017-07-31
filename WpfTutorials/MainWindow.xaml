@@ -9,7 +9,7 @@
         AllowsTransparency="True"
         x:Name="AppWindow"
         WindowStartupLocation="CenterScreen"
-        Icon="Images/yusif.png"
+        Icon="Images/icons8_Eye_50px.png"
         Title="Pan Oculum" MinHeight="{Binding WindowMinHeight}" MinWidth="{Binding WindowMinWidth}" >
     <Window.Resources>
         <Style TargetType="{x:Type local:MainWindow}">

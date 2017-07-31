@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/club.svg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("icons8_eye_50px_syb_icon.ico")]
 
 
