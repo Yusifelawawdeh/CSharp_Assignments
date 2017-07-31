@@ -58,7 +58,7 @@
                                         </Grid.ColumnDefinitions>
                                         <!-- Icon -->
                                         <Button Command="{Binding SystemMenuCommand}" Style="{StaticResource SystemIconButton}">
-                                            <Image Source="/Images/yusif.png"/>
+                                            <Image Source="/Images/icons8_Eye_50px.png"/>
                                         </Button>
                                         <!-- Title Text -->
                                         <Viewbox Grid.Column="1">
@@ -115,6 +115,6 @@
             />
     </WindowChrome.WindowChrome>
     <Grid Background="Azure">
-        <Button Content="Hello me gusta freindo"/>
+        <Frame x:Name="MainFrame" Content="{Binding CurrentPage}"/>
     </Grid>
 </Window>
