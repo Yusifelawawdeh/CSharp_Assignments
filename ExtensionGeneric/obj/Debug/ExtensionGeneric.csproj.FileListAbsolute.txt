@@ -2,3 +2,4 @@ C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\ExtensionGeneric\bin\Debug\ExtensionGeneric.pdb
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\ExtensionGeneric\obj\Debug\ExtensionGeneric.dll
 C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\ExtensionGeneric\obj\Debug\ExtensionGeneric.pdb
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\ExtensionGeneric\obj\Debug\ExtensionGeneric.csprojResolveAssemblyReference.cache

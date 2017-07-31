@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfTutorials"
+        xmlns:valueConverters="clr-namespace:WpfTutorials.ValueConverters"
         mc:Ignorable="d"
         WindowStyle="None"
         AllowsTransparency="True"
@@ -115,6 +116,6 @@
             />
     </WindowChrome.WindowChrome>
     <Grid Background="Azure">
-        <Frame x:Name="MainFrame" Content="{Binding CurrentPage}"/>
+        <Frame x:Name="MainFrame" Content="{Binding CurrentPage, Converter={valueConverters:ApplicationPageValueConverter}}"/>
     </Grid>
 </Window>

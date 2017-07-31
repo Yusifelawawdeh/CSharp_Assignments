@@ -25,6 +25,11 @@ namespace WpfTutorials.ValueConverters
         #region provide value method
 
 
+        /// <summary>
+        /// provides a static instance of the value converter
+        /// </summary>
+        /// <param name="serviceProvider"> the service provider </param>
+        /// <returns></returns>
         public override object ProvideValue(IServiceProvider serviceProvider)
         {
             return _converter ?? (_converter = new T());
@@ -58,5 +63,6 @@ namespace WpfTutorials.ValueConverters
         public abstract object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture);
 
         #endregion
+
     }
 }
