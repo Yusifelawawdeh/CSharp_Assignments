@@ -100,9 +100,7 @@
                                     
                                     <!-- page Content -->
                                     <Border Grid.Row="2" Padding="{Binding InnerContentPadding}">
-                                        <Border.Background>
-                                            <SolidColorBrush Color="AliceBlue"/>
-                                        </Border.Background>
+                 
                                         <ContentPresenter Content="{TemplateBinding Content}"/>
                                     </Border>
 

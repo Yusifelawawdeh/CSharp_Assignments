@@ -38,7 +38,7 @@ namespace WpfTutorials.ViewModel
 
         public int OuterMarginSize
         {
-            get => _window.WindowState == WindowState.Maximized ? 0 : _outerMarginSize;
+            get => Borderless ? 0 : _outerMarginSize;
             set => _outerMarginSize = value;
         }
 
@@ -46,7 +46,7 @@ namespace WpfTutorials.ViewModel
 
         public int WindowRadius
         {
-            get => _window.WindowState == WindowState.Maximized ? 0 : _windowRadius;
+            get => Borderless ? 0 : _windowRadius;
             set => _windowRadius = value;
         }
 
@@ -73,11 +73,7 @@ namespace WpfTutorials.ViewModel
 
             _window.StateChanged += (sender, e) =>
             {
-                OnPropertyChanged(nameof(ResizeBorderThickness));
-                OnPropertyChanged(nameof(OuterMarginSize));
-                OnPropertyChanged(nameof(OuterMarginSizeThickness));
-                OnPropertyChanged(nameof(WindowRadius));
-                OnPropertyChanged(nameof(WindowCornerRadius));
+                WindowResized();
             };
 
             MinimizeCommand = new RelayCommand(() => _window.WindowState = WindowState.Minimized);
@@ -87,6 +83,13 @@ namespace WpfTutorials.ViewModel
 
             //fix window resize issue 
             var resizer = new WindowResizer(_window);
+
+            resizer.WindowDockChanged += (dock) =>
+            {
+                _dockPosition = dock;
+
+                WindowResized();
+            };
 
 
         }
@@ -111,6 +114,15 @@ namespace WpfTutorials.ViewModel
             Win32Point w32Mouse = new Win32Point();
             GetCursorPos(ref w32Mouse);
             return new Point(w32Mouse.X, w32Mouse.Y);
+        }
+
+        private void WindowResized()
+        {
+            OnPropertyChanged(nameof(ResizeBorderThickness));
+            OnPropertyChanged(nameof(OuterMarginSize));
+            OnPropertyChanged(nameof(OuterMarginSizeThickness));
+            OnPropertyChanged(nameof(WindowRadius));
+            OnPropertyChanged(nameof(WindowCornerRadius));
         }
 
         #endregion

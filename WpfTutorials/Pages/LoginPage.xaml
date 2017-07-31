@@ -8,7 +8,9 @@
       d:DesignHeight="300" d:DesignWidth="300"
       Title="LoginPage">
 
-    <Grid>
-        <Button Content="Login Page"/>
-    </Grid>
+    <Border Background="#3099c5">
+        <Grid>
+            <Button Content="Login Page" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+    </Border>
 </Page>
