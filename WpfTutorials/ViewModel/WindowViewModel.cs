@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
+using WpfTutorials.DataModels;
 using WpfTutorials.Window;
 
 namespace WpfTutorials.ViewModel
@@ -51,14 +52,18 @@ namespace WpfTutorials.ViewModel
 
         public GridLength TitleHeightGridlength => new GridLength(TitleHeight + ResizeBorder);
 
+        public ApplicationPage CurrentPage { get; set; } = ApplicationPage.Login;
+
+        #region Button Commands
         public ICommand MinimizeCommand { get; set; }
         public ICommand MaximizeCommand { get; set; }
         public ICommand CloseCommand { get; set; }
-        public ICommand SystemMenuCommand { get; set; }
+        public ICommand SystemMenuCommand { get; set; } 
+        #endregion
 
+        #region Constructor s
 
-
-        public WindowViewModel(System.Windows.Window window)
+	    public WindowViewModel(System.Windows.Window window)
         {
             _window = window;
 
@@ -82,6 +87,8 @@ namespace WpfTutorials.ViewModel
 
         }
 
+        #endregion
+
         #region Private Helpers
         [DllImport("user32.dll")]
         [return: MarshalAs(UnmanagedType.Bool)]
@@ -103,6 +110,5 @@ namespace WpfTutorials.ViewModel
         }
 
         #endregion
-
     }
 }
