@@ -3,8 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfTutorials"
-        xmlns:valueConverters="clr-namespace:WpfTutorials.ValueConverters"
+        xmlns:Main="clr-namespace:WpfTutorials"
+        xmlns:local="clr-namespace:WpfTutorials.ValueConverters"
         mc:Ignorable="d"
         WindowStyle="None"
         AllowsTransparency="True"
@@ -13,7 +13,7 @@
         Icon="Images/icons8_Eye_50px.png"
         Title="Pan Oculum" MinHeight="{Binding WindowMinHeight}" MinWidth="{Binding WindowMinWidth}" >
     <Window.Resources>
-        <Style TargetType="{x:Type local:MainWindow}">
+        <Style TargetType="{x:Type Main:MainWindow}">
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Window}">
@@ -62,8 +62,13 @@
                                             <Image Source="/Images/icons8_Eye_50px.png"/>
                                         </Button>
                                         <!-- Title Text -->
-                                        <Viewbox Grid.Column="1">
-                                            <TextBlock Style="{StaticResource HeaderText}" Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Title, FallbackValue='Pan Oculum'}"/>
+                                        <Viewbox Grid.Column="0" Grid.ColumnSpan="3">
+                                            <StackPanel>
+                                                <Image Source="/images/icons8_Opera_Glasses_40px.png"/>
+                                                <TextBlock FontFamily="{StaticResource HelveticaLight}" Text="Pan Oculum">
+                                                    <Run Text="P" Foreground="{StaticResource }"
+                                                </TextBlock>
+                                            </StackPanel>
                                         </Viewbox>
                                         
                                         <!-- three buttons -->
@@ -116,6 +121,6 @@
             />
     </WindowChrome.WindowChrome>
     <Grid Background="Azure">
-        <Frame x:Name="MainFrame" Content="{Binding CurrentPage, Converter={valueConverters:ApplicationPageValueConverter}}"/>
+        <Frame x:Name="MainFrame" Content="{Binding CurrentPage, Converter={local:ApplicationPageValueConverter}}"/>
     </Grid>
 </Window>

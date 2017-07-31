@@ -1,12 +1,17 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:WpfTutorials">
+                    xmlns:local="clr-namespace:WpfTutorials"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
 
     <FontFamily x:Key="HelveticaRegular">pack://application;,,,/Fonts/Helvetica_World/#Helvetica World</FontFamily>
     <FontFamily x:Key="HelveticaBold">pack://application;,,,/Fonts/Helvetica_World/#Helvetica World Bold</FontFamily>
+    <FontFamily x:Key="HelveticaLight">pack://application;,,,/Fonts/Helvetica/#HelveticaLTStd-Light</FontFamily>
+
+
     <Style TargetType="{x:Type Control}" x:Key="BaseStyle">
         <Setter Property="FontFamily" Value="{StaticResource HelveticaBold}"/>
     </Style>
+
     <Style TargetType="{x:Type TextBlock}" x:Key="BaseTextBlockStyle">
         <Setter Property="FontFamily" Value="{StaticResource HelveticaRegular}"/>
     </Style>
@@ -18,4 +23,10 @@
     <Style TargetType="{x:Type ListView}" BasedOn="{StaticResource BaseStyle}"/>
     <Style TargetType="{x:Type GroupBox}" BasedOn="{StaticResource BaseStyle}"/>
     <Style TargetType="{x:Type ListBox}" BasedOn="{StaticResource BaseStyle}"/>
+
+    <system:Double x:Key="FontSizeHeavy">32</system:Double>
+    <system:Double x:Key="FontSizeRegular">24</system:Double>
+    <system:Double x:Key="FontSizeSmall">14</system:Double>
+    <system:Double x:Key="FontSizeMicro">12</system:Double>
+
 </ResourceDictionary>

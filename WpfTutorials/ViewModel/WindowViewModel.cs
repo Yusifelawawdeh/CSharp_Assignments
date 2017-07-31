@@ -22,15 +22,19 @@ namespace WpfTutorials.ViewModel
 
         private int _windowRadius = 3;
 
+        private WindowDockPosition _dockPosition = WindowDockPosition.Undocked;
+
         public double WindowMinWidth { get; set; } = 400;
 
         public double WindowMinHeight { get; set; } = 400;
 
-        public int ResizeBorder { get; set; } = 6;
+        public bool Borderless => (_window.WindowState == WindowState.Maximized || _dockPosition != WindowDockPosition.Undocked);
 
-        public Thickness ResizeBorderThinckness => new Thickness(ResizeBorder + OuterMarginSize);
+        public int ResizeBorder => Borderless ? 0 : 6;
 
-        public Thickness InnerContentPadding => new Thickness(ResizeBorder);
+        public Thickness ResizeBorderThickness => new Thickness(ResizeBorder + OuterMarginSize);
+
+        public Thickness InnerContentPadding { get; set; } = new Thickness(0);
 
         public int OuterMarginSize
         {
@@ -69,7 +73,7 @@ namespace WpfTutorials.ViewModel
 
             _window.StateChanged += (sender, e) =>
             {
-                OnPropertyChanged(nameof(ResizeBorderThinckness));
+                OnPropertyChanged(nameof(ResizeBorderThickness));
                 OnPropertyChanged(nameof(OuterMarginSize));
                 OnPropertyChanged(nameof(OuterMarginSizeThickness));
                 OnPropertyChanged(nameof(WindowRadius));
