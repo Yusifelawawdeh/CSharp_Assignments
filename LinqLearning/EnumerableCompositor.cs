@@ -12,6 +12,13 @@ namespace LinqLearning
 
 
         /// <summary>
+        /// Initializer for collections that instantiate the enumerable compositer
+        /// </summary>
+        public EnumerableCompositor()
+        {
+            _collections = new List<IEnumerable<T>>();
+        }
+        /// <summary>
         /// constructor that takes Ienumerable interaface to store lists sets and arrays in a collection
         /// </summary>
         /// <param name="collections">any type of collection passed in</param>
@@ -20,14 +27,27 @@ namespace LinqLearning
             _collections = collections.ToList();
         }
 
+        public void Add(IEnumerable<T> collection)
+        {
+            _collections.Add(collection);
+        }
+
         public IEnumerator<T> GetEnumerator()
         {
-            throw new NotImplementedException();
+            foreach (var collection in _collections)
+            {
+                foreach (var item in collection)
+                {
+                    yield return item;
+                }
+            }
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
             throw new NotImplementedException();
         }
+
+
     }
 }
