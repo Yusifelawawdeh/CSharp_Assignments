@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static LinqLearning.EnumerableCompositor;
 
 namespace LinqLearning
 {
@@ -20,13 +21,9 @@ namespace LinqLearning
             var set1 = new HashSet<int> { 3, 6, 9, 12, 15 };
             var array1 = new[] { 4, 8, 12, 16, 20 };
 
-
-
-            var ec = new EnumerableCompositor<int> { list1, list2, set1, array1 };
-
             int numOdd = 0;
 
-            foreach (var value in ec)
+            foreach (var value in EC(list1, list2, set1, array1))
             {
                 if (IsOdd(value))
                 {
@@ -34,14 +31,16 @@ namespace LinqLearning
                 }
             }
 
-            IEnumerable<int> firstThree = Utils.Take<int>(list1, 3);
 
-            foreach (var item in firstThree)
-            {
+            
+            #region learning how to use yields
+            //IEnumerable<int> firstThree = Utils.Take(list1, 3);
 
-            }
+            //foreach (var item in firstThree)
+            //{
 
-
+            //} 
+            #endregion
 
             #region Middle Way with out Ienumerable instance collection
 

@@ -6,6 +6,14 @@ using System.Linq;
 
 namespace LinqLearning
 {
+    static class EnumerableCompositor
+    {
+        public static EnumerableCompositor<T> EC<T>(params IEnumerable<T>[] collections)
+        {
+            return new EnumerableCompositor<T>(collections);
+        }
+    }
+
     class EnumerableCompositor<T> : IEnumerable<T>
     {
         private List<IEnumerable<T>> _collections;
