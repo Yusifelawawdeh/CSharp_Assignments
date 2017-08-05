@@ -34,10 +34,20 @@ namespace LinqLearning
                 }
             }
 
+            IEnumerable<int> firstThree = Utils.Take<int>(list1, 3);
+
+            foreach (var item in firstThree)
+            {
+
+            }
+
+
+
             #region Middle Way with out Ienumerable instance collection
 
             //var ec = new EnumerableCompositor<int>(new IEnumerable<int>[] {list1, list2, set1, array1});
             //int numOdd = ec.Count(x => IsOdd(x)); 
+
             #endregion
 
             #region long way 
