@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructures
 {
-    class Program
+    partial class Program
     {
         public void main(string[] args)
         {
@@ -24,6 +24,10 @@ namespace DataStructures
 
             var books = new GenericList<Book>();
             books.Add(new Book());
+
+            var dictionary = new GenericDictionary<string, Book>();
+            dictionary.Add("anything goes", new Book());
+
 
         }
     }
