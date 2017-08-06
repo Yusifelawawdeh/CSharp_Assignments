@@ -21,5 +21,10 @@ namespace LinqLearning
                 }
             }
         }
+
+        public static T Min<T>(T item1, T item2) where T : IComparable<T>
+        {
+            return (item1.CompareTo(item2) < 0) ? item1 : item2;
+        }
     }
 }

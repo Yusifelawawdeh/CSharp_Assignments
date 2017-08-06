@@ -21,15 +21,7 @@ namespace LinqLearning
             var set1 = new HashSet<int> { 3, 6, 9, 12, 15 };
             var array1 = new[] { 4, 8, 12, 16, 20 };
 
-            int numOdd = 0;
-
-            foreach (var value in EC(list1, list2, set1, array1))
-            {
-                if (IsOdd(value))
-                {
-                    numOdd++;
-                }
-            }
+            int numOdd = EC(list1, list2, set1, array1).Count(x => IsOdd(x));
 
 
             
