@@ -23,15 +23,17 @@ namespace LinqLearning
 
             int numOdd = EC(list1, list2, set1, array1).Count(x => IsOdd(x));
 
+            HashSet<int> set = EC(list1, list2, set1, array1).To<HashSet<int>>();
 
-            
             #region learning how to use yields
+
             //IEnumerable<int> firstThree = Utils.Take(list1, 3);
 
             //foreach (var item in firstThree)
             //{
 
             //} 
+
             #endregion
 
             #region Middle Way with out Ienumerable instance collection

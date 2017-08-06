@@ -56,6 +56,16 @@ namespace LinqLearning
             return GetEnumerator();
         }
 
+        public TCollection To<TCollection>() where TCollection : ICollection<T>, new()
+        {
+            var collection = new TCollection();
 
+            foreach (var item in this)
+            {
+                collection.Add(item);
+            }
+
+            return collection;
+        }
     }
 }
