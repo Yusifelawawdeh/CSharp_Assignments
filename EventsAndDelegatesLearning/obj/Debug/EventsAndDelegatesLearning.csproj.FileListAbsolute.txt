@@ -1,0 +1,6 @@
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\EventsAndDelegatesLearning\bin\Debug\EventsAndDelegatesLearning.exe.config
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\EventsAndDelegatesLearning\bin\Debug\EventsAndDelegatesLearning.exe
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\EventsAndDelegatesLearning\bin\Debug\EventsAndDelegatesLearning.pdb
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\EventsAndDelegatesLearning\obj\Debug\EventsAndDelegatesLearning.csprojResolveAssemblyReference.cache
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\EventsAndDelegatesLearning\obj\Debug\EventsAndDelegatesLearning.exe
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\EventsAndDelegatesLearning\obj\Debug\EventsAndDelegatesLearning.pdb
