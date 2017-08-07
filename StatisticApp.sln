@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPrinciples", "DesignP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTutorials", "WpfTutorials\WpfTutorials.csproj", "{A5834FE4-930A-40DB-8197-CAF24040AAC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAndDelegates", "EventsAndDelegates\EventsAndDelegates.csproj", "{13D7B593-D617-4F9C-8EFE-5104F06371EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{A5834FE4-930A-40DB-8197-CAF24040AAC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5834FE4-930A-40DB-8197-CAF24040AAC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5834FE4-930A-40DB-8197-CAF24040AAC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13D7B593-D617-4F9C-8EFE-5104F06371EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13D7B593-D617-4F9C-8EFE-5104F06371EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13D7B593-D617-4F9C-8EFE-5104F06371EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13D7B593-D617-4F9C-8EFE-5104F06371EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
