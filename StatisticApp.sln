@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTutorials", "WpfTutorial
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAndDelegatesLearning", "EventsAndDelegatesLearning\EventsAndDelegatesLearning.csproj", "{A93E1247-F887-43E9-ACF0-B0B413FD9B10}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IterativeAndRecursive", "IterativeAndRecursive\IterativeAndRecursive.csproj", "{087F29DB-6308-4542-A12B-F3D14404C3F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,10 @@ Global
 		{A93E1247-F887-43E9-ACF0-B0B413FD9B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A93E1247-F887-43E9-ACF0-B0B413FD9B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A93E1247-F887-43E9-ACF0-B0B413FD9B10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{087F29DB-6308-4542-A12B-F3D14404C3F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{087F29DB-6308-4542-A12B-F3D14404C3F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{087F29DB-6308-4542-A12B-F3D14404C3F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{087F29DB-6308-4542-A12B-F3D14404C3F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -25,8 +25,6 @@ namespace EventsAndDelegatesLearning
 
         public event EventHandler<VideoEventArgs> VideoEncoded;
 
-
-
         public void Encode(Video video)
         {
             Console.WriteLine("Encoding Video...");

@@ -1,0 +1,5 @@
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\IterativeAndRecursive\bin\Debug\IterativeAndRecursive.exe.config
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\IterativeAndRecursive\bin\Debug\IterativeAndRecursive.exe
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\IterativeAndRecursive\bin\Debug\IterativeAndRecursive.pdb
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\IterativeAndRecursive\obj\Debug\IterativeAndRecursive.exe
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\IterativeAndRecursive\obj\Debug\IterativeAndRecursive.pdb
