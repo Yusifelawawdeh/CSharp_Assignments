@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EventsAndDelegatesLearning
 {
-    class Video
+    public class Video
     {
         public string Title { get; set; }
     }

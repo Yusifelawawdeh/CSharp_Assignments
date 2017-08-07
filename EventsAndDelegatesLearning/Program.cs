@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace EventsAndDelegatesLearning
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
