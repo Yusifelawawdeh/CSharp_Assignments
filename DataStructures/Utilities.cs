@@ -3,12 +3,17 @@
 namespace DataStructures
 {
     // where T : IComparable -- example below
-
-    public class Utilities<T> where T : IComparable
+    // using a constraint
+    public class Utilities<T> where T : IComparable, new()
     {
         public int Max(int a, int b)
         {
             return a > b ? a : b;
+        }
+
+        public void DoSomething(T value)
+        {
+            var obj = new T();
         }
 
         public T Max(T a, T b)
