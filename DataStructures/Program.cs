@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DataStructures
 {
-    partial class Program
+    public class Program
     {
-        public static void main(string[] args)
+        public static void Main(string[] args)
         {
             #region earlier version
             //var book = new Book { Isbn = "1234", Title = "Dark Star"};
@@ -30,7 +30,7 @@ namespace DataStructures
             //dictionary.Add("anything goes", new Book()); 
             #endregion
 
-            var number = new Nullable<int>(5);
+            var number = new Nullable<int>();
             Console.WriteLine("Has Value ? " + number.HasValue);
             Console.WriteLine("Value: " + number.GetValueOrDefault());
 
