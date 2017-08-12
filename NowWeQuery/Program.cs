@@ -30,7 +30,7 @@ namespace NowWeQuery
         {
             Action<string> sayGreeting;
 
-            Func<string, string> conversate = delegate(string message)
+            Func<string, string> conversate = (message) =>
             {
                 Console.WriteLine(message);
                 return Console.ReadLine();
@@ -38,7 +38,7 @@ namespace NowWeQuery
 
             string input = conversate("What's your name?");
 
-            sayGreeting = delegate (string greeting)
+            sayGreeting = (greeting) =>
             {
                 Console.WriteLine(string.Format(greeting, input));
             };
