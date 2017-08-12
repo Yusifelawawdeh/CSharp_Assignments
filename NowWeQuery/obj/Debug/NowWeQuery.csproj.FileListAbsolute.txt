@@ -1,0 +1,6 @@
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\NowWeQuery\bin\Debug\NowWeQuery.exe.config
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\NowWeQuery\bin\Debug\NowWeQuery.exe
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\NowWeQuery\bin\Debug\NowWeQuery.pdb
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\NowWeQuery\obj\Debug\NowWeQuery.exe
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\NowWeQuery\obj\Debug\NowWeQuery.pdb
+C:\Users\atlas\OneDrive\Documents\Visual Studio 2017\Projects\CSharp_Assignments\NowWeQuery\obj\Debug\NowWeQuery.csprojResolveAssemblyReference.cache
