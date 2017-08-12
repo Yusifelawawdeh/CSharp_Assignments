@@ -24,8 +24,11 @@ namespace NowWeQuery
         }
 
         static void Main(string[] args)
-    {
-        SayGreeting sayGreeting = new SayGreeting(SayHello);
+        {
+            SayGreeting sayGreeting = delegate(string name)
+            {
+                Console.WriteLine(string.Format("Hello, {0}", name));
+            };
         Console.WriteLine("What's your name ?");
         string input = Console.ReadLine();
         sayGreeting(input);
