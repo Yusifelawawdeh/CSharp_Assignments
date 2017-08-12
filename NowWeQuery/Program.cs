@@ -29,20 +29,37 @@ namespace NowWeQuery
         static void Main(string[] args)
         {
             Action<string> sayGreeting;
-            sayGreeting = delegate (string name)
+
+            Func<string, string> conversate = delegate(string message)
             {
-                Console.WriteLine(string.Format("Hello, {0}", name));
+                Console.WriteLine(message);
+                return Console.ReadLine();
             };
-            Console.WriteLine("What's your name ?");
-            string input = Console.ReadLine();
-            sayGreeting(input);
-            Console.ReadLine();
-            //sayGreeting = new SayGreeting(SayGoodBye);
-            sayGreeting = delegate (string name)
+
+            string input = conversate("What's your name?");
+
+            sayGreeting = delegate (string greeting)
             {
-                Console.WriteLine(string.Format("Later, {0}", name));
+                Console.WriteLine(string.Format(greeting, input));
             };
-            sayGreeting(input);
+
+
+
+            sayGreeting("Hello, {0}");
+            conversate("Nice to meet you");
+            conversate("are you doing well ?");
+            sayGreeting("Later, {0}");
+
+            //Console.WriteLine("What's your name ?");
+            //string input = Console.ReadLine();
+
+            //Console.ReadLine();
+            ////sayGreeting = new SayGreeting(SayGoodBye);
+            //sayGreeting = delegate (string name)
+            //{
+            //    Console.WriteLine(string.Format("Later, {0}", name));
+            //};
+
 
 
             ListLooperAlpha();
