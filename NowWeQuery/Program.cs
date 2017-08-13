@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace NowWeQuery
 {
 
-    class Program
+     public class Program
     {
         //delegate void SayGreeting(string name);
 
@@ -23,8 +23,6 @@ namespace NowWeQuery
         //    Console.WriteLine(string.Format("Hello, {0}", name));
 
         //}
-
-
 
         static void Main(string[] args)
         {
@@ -116,9 +114,33 @@ namespace NowWeQuery
             }
         }
 
+        //public static void QueryBirds()
+        //{
+        //    Bird birds = new Bird();
 
+        //    //var birdQuery = from b in birds where b.Color == "Red" select b;
 
+        //    //birds.where((b) => birds.Color == "Red");
 
+        //    //var Tora = birds.Where((b) => { return b.Color == "Red"; });
+
+        //    // IQueryable<Bird> birdy = from b in birds
+        //    //orderby b.Color
+        //    //select b;
+        //      birds.Where(b => b.Color == "Red").OrderBy(b => b.Name);
+        //}
+
+        //public static List<Bird> Something()
+        //{
+        //    var birdsy = new List<Bird>
+        //         {
+        //        new Bird {Name = "Cardinal", Color = "Red", Sightings = 24},
+        //        new Bird {Name = "Dove", Color = "White", Sightings = 2},
+        //        new Bird {Name = "Crow", Color = "Black", Sightings = 310}
+        //    };
+
+        //    return from b in birdsy where b.Color == "Red" select b;
+        //}
     }
 
     public class Bird
