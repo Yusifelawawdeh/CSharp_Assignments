@@ -70,6 +70,47 @@ namespace NowWeQuery
 
             Console.WriteLine(Birdlier());
             Console.WriteLine(SinglerEin());
+            Console.WriteLine(GiveBird());
+
+
+
+            var birders = new List<Bird>
+            {
+                new Bird {Name = "Cardinal", Color = "Red", Sightings = 24},
+                new Bird {Name = "Dove", Color = "White", Sightings = 2},
+                new Bird {Name = "Crow", Color = "Black", Sightings = 310}
+            };
+
+            var gimiBirds = birders.OrderBy(b => b.Name.Length).TakeWhile(b => b.Name.Length < 6);
+
+            Console.WriteLine(gimiBirds);
+
+
+            ColorsPlease();
+
+
+
+            var colorizer = from b in gimiBirds group b by b.Color;
+
+            var grouper = gimiBirds.GroupBy(b => b.Color);
+
+            Console.WriteLine(colorizer);
+            Console.WriteLine(grouper);
+
+            var thingy = birders.GroupBy(b => b.Color).Select(g => new { Color = g.Key, Count = birders.Count()});
+
+            Console.WriteLine(thingy);
+
+            var toother = birders.Sum(b => b.Sightings);
+
+            var thingers = birders.Average(b => b.Sightings);
+
+            //var kloor = birders.GroupBy(k = > k.Color).Select(g => new
+            //{
+            //    Color = g.key,
+            //    Sightings = g.Sum(b => b.Sightings)
+            //});
+
         }
 
         public static void TheBirds()
@@ -173,6 +214,36 @@ namespace NowWeQuery
             return numbers.SingleOrDefault(n => n == 2);
         }
 
+        public static object GiveBird()
+        {
+            var birds = new List<Bird>
+            {
+                new Bird {Name = "Cardinal", Color = "Red", Sightings = 24},
+                new Bird {Name = "Dove", Color = "White", Sightings = 2},
+                new Bird {Name = "Crow", Color = "Black", Sightings = 310}
+            };
+
+            return birds.Take(3);
+        }
+
+        public static void ColorsPlease()
+        {
+            var birds = new List<Bird>
+            {
+                new Bird {Name = "Cardinal", Color = "Red", Sightings = 24},
+                new Bird {Name = "Dove", Color = "White", Sightings = 2},
+                new Bird {Name = "Crow", Color = "Black", Sightings = 310}
+            };
+
+            var colors = new List<string> {"red", "Green", "Blue"};
+
+            var result = from b in birds join c in colors on b.Color equals c select b;
+
+
+
+            Console.WriteLine(result);
+        }
+
     }
 
     public class Bird
@@ -181,5 +252,6 @@ namespace NowWeQuery
         public string Color { get; set; }
         public int Sightings { get; set; }
     }
+
 
 }
