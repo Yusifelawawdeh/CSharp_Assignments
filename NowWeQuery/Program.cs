@@ -12,6 +12,7 @@ namespace NowWeQuery
     {
         //delegate void SayGreeting(string name);
 
+        
 
         public static void SayHello(string name)
         {
@@ -67,6 +68,8 @@ namespace NowWeQuery
             // query syntax 
             // from i in rubble where i > 10 select i;
 
+            Console.WriteLine(Birdlier());
+            Console.WriteLine(SinglerEin());
         }
 
         public static void TheBirds()
@@ -141,6 +144,35 @@ namespace NowWeQuery
 
         //    return from b in birdsy where b.Color == "Red" select b;
         //}
+
+        public static Tuple<bool, IEnumerable<Bird>, bool> Birdlier()
+        {
+            var birds = new List<Bird>
+            {
+                new Bird {Name = "Cardinal", Color = "Red", Sightings = 24},
+                new Bird {Name = "Dove", Color = "White", Sightings = 2},
+                new Bird {Name = "Crow", Color = "Black", Sightings = 310}
+            };
+
+            var stringer = birds.Any(b => b.Name == "Crow");
+            var stringlier = birds.Where(b => b.Name == "Crow");
+            var stringliest = birds.Any(b => b.Name == "Crow");
+
+            var result = Tuple.Create<bool, IEnumerable<Bird>, bool>(stringer, stringlier, stringliest);
+
+            return result;
+
+        }
+
+        public static int SinglerEin()
+        {
+            var numbers = new List<int> {2, 4, 5, 6, 7};
+
+
+
+            return numbers.SingleOrDefault(n => n == 2);
+        }
+
     }
 
     public class Bird
