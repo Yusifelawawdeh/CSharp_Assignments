@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 namespace NowWeQuery
 {
 
-     public class Program
+    public class Program
     {
         //delegate void SayGreeting(string name);
 
-        
+
 
         public static void SayHello(string name)
         {
@@ -73,6 +73,9 @@ namespace NowWeQuery
             Console.WriteLine(GiveBird());
 
 
+            var colors = new List<string> { "red", "Green", "Blue" };
+
+            var numbers = new List<int> { 1, 2, 3, 4, 6, 7, 8, 13, 23, 41, 654, 4234, 32, 1111 };
 
             var birders = new List<Bird>
             {
@@ -97,19 +100,54 @@ namespace NowWeQuery
             Console.WriteLine(colorizer);
             Console.WriteLine(grouper);
 
-            var thingy = birders.GroupBy(b => b.Color).Select(g => new { Color = g.Key, Count = birders.Count()});
+            var thingy = birders.GroupBy(b => b.Color).Select(g => new { Color = g.Key, Count = birders.Count() });
 
             Console.WriteLine(thingy);
 
-            var toother = birders.Sum(b => b.Sightings);
 
-            var thingers = birders.Average(b => b.Sightings);
+            //+ Operators
+
+            var sumer = birders.Sum(b => b.Sightings);
+
+            var averager = birders.Average(b => b.Sightings);
+
+            var selector = birders.Select(b => b.Color);
+
+            var distinctcor = birders.Select(b => b.Color).Distinct();
+
+            var excluder = colors.Except(birders.Select(b => b.Color).Distinct());
+
+            var unioner = colors.Union(birders.Select(b => b.Color).Distinct());
+
+            var intersector = colors.Intersect(birders.Select(b => b.Color).Distinct());
+
+            var concater = colors.Concat(birders.Select(b => b.Color));
+
+            //+ generator operators
+
+            var ranger = Enumerable.Range(0, 1000);
+
+            var repeater = Enumerable.Repeat("lol", 20);
+
+            var emptyer = Enumerable.Empty<Bird>();
+
+            var defIfEmptyer = numbers.DefaultIfEmpty();
+
+            //+ List Operators
+
+            var toLister = birders.Where(b => b.Color == "Red").ToList();
+
+            var toArrayer = birders.Where(b => b.Color == "Red").ToArray();
+
+            var thingers = numbers.Where(n => n > 10);
 
             //var kloor = birders.GroupBy(k = > k.Color).Select(g => new
             //{
             //    Color = g.key,
             //    Sightings = g.Sum(b => b.Sightings)
             //});
+
+            Console.WriteLine(BirdColors());
 
         }
 
@@ -207,7 +245,7 @@ namespace NowWeQuery
 
         public static int SinglerEin()
         {
-            var numbers = new List<int> {2, 4, 5, 6, 7};
+            var numbers = new List<int> { 2, 4, 5, 6, 7 };
 
 
 
@@ -235,7 +273,7 @@ namespace NowWeQuery
                 new Bird {Name = "Crow", Color = "Black", Sightings = 310}
             };
 
-            var colors = new List<string> {"red", "Green", "Blue"};
+            var colors = new List<string> { "red", "Green", "Blue" };
 
             var result = from b in birds join c in colors on b.Color equals c select b;
 
@@ -243,6 +281,22 @@ namespace NowWeQuery
 
             Console.WriteLine(result);
         }
+
+        public static string BirdColors()
+        {
+            var birds = new List<Bird>
+            {
+                new Bird {Name = "Cardinal", Color = "Red", Sightings = 24},
+                new Bird {Name = "Dove", Color = "White", Sightings = 2},
+                new Bird {Name = "Crow", Color = "Black", Sightings = 310}
+            };
+
+           var biders =  birds.Select(b => b.Color).ToString();
+
+            return biders;
+        }
+
+
 
     }
 

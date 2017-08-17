@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatisticApp", "StatisticApp\StatisticApp.csproj", "{CB4E27C7-F918-46B3-910E-A9BA9DFB2141}"
 EndProject
@@ -32,6 +32,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IterativeAndRecursive", "IterativeAndRecursive\IterativeAndRecursive.csproj", "{087F29DB-6308-4542-A12B-F3D14404C3F4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NowWeQuery", "NowWeQuery\NowWeQuery.csproj", "{42E1FEFA-4E45-4BE3-91D4-65779B045A18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NowWeQuery2", "NowWeQuery2\NowWeQuery2.csproj", "{82F62791-69C4-40CC-9CD1-3D953981349F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,6 +97,10 @@ Global
 		{42E1FEFA-4E45-4BE3-91D4-65779B045A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42E1FEFA-4E45-4BE3-91D4-65779B045A18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42E1FEFA-4E45-4BE3-91D4-65779B045A18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82F62791-69C4-40CC-9CD1-3D953981349F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F62791-69C4-40CC-9CD1-3D953981349F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F62791-69C4-40CC-9CD1-3D953981349F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F62791-69C4-40CC-9CD1-3D953981349F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
