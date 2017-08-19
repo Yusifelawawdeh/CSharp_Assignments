@@ -25,7 +25,7 @@ namespace Game
 
         public bool IsOnPath(MapLocation mapLocation)
         {
-            throw new NotImplementedException();
+            return Array.IndexOf(_path, mapLocation) >= 0;
         }
     }
 }
