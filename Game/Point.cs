@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    class Point
+    public class Point
     {
         public readonly int X;
         public readonly int Y;

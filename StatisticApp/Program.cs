@@ -13,7 +13,7 @@ namespace StatisticApp
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string currentDirectory = Directory.GetCurrentDirectory();
             DirectoryInfo directory = new DirectoryInfo(currentDirectory);
@@ -50,8 +50,6 @@ namespace StatisticApp
             }
             fileName = Path.Combine(directory.FullName, "topten.json");
             SerializePlayersToFile(topTenPlayers, fileName);
-
-
         }
 
         public static string ReadFile(string fileName)
