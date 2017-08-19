@@ -23,5 +23,9 @@ namespace Game
             return (pathStep < _path.Length) ? _path[pathStep] : null;
         }
 
+        public bool IsOnPath(MapLocation mapLocation)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
