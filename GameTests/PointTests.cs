@@ -34,7 +34,14 @@ namespace Game.Tests
         [TestMethod()]
         public void DistanceToTest1()
         {
-            Assert.Fail();
+            var point = new Point(3, 4);
+            var target = new Point(0, 0);
+
+            var expected = 5.0;
+
+            var actual = target.DistanceTo(point);
+
+            Assert.AreEqual(expected, actual, 2);
         }
     }
 }
