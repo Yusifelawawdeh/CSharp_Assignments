@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    class Invader
+    public class Invader
     {
         private readonly Path _path;
         private int _pathStep = 0;

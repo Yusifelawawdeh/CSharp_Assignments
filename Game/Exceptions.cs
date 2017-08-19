@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    class GameExceptions : SystemException
+    public class GameExceptions : SystemException
     {
         public GameExceptions()
         {
@@ -19,7 +19,7 @@ namespace Game
         }
     }
 
-    class OutOfBoundsException : GameExceptions
+    public class OutOfBoundsException : GameExceptions
     {
         public OutOfBoundsException()
         {

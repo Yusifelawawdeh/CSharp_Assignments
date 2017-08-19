@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    class Level
+    public class Level
     {
         private readonly Invader[] _invaders;
 

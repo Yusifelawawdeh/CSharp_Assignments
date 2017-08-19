@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    class Tower
+    public class Tower
     {
         private const int _range = 1;
         private const int _power = 1;
