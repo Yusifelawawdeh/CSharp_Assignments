@@ -11,7 +11,7 @@ using System.Net;
 
 namespace StatisticApp
 {
-    class Program
+    public class Program
     {
         public static void Main(string[] args)
         {

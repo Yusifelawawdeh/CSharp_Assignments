@@ -41,5 +41,11 @@ namespace GameTests
             var target = _path3;
             Assert.IsFalse(target.IsOnPath(new MapLocation(0, 0, _map3x3)));
         }
+
+        [TestMethod()]
+        public void GetLocation()
+        {
+
+        }
     }
 }
